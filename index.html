@@ -39,8 +39,9 @@
         <ul class="nav-links">
           <li><a href="#download">Download APK</a></li>
           <li><a href="#visual-guide">Setup Guidelines</a></li>
-          <li><a href="#languages">15+ Languages</a></li>
-          <li><a href="#matrix">File Extensions</a></li>
+          <li><a href="#in-app-guide">15+ Compilers Guide</a></li>
+          <li><a href="#languages">Supported Stacks</a></li>
+          <li><a href="#about-compliance">Specs &amp; Licenses</a></li>
         </ul>
 
         <div class="nav-actions">
@@ -189,239 +190,505 @@
       </div>
     </section>
 
-    <!-- STEP-BY-STEP VISUAL SETUP GUIDELINES -->
+    <!-- STEP-BY-STEP VISUAL SETUP GUIDELINES (REAL SCREENSHOTS) -->
     <section id="visual-guide">
       <div class="section-head">
-        <div class="section-eyebrow">Visual Step-By-Step Setup</div>
-        <h2 class="section-title">How To Setup &amp; Use Code Editor</h2>
+        <div class="section-eyebrow">Real App Walkthrough</div>
+        <h2 class="section-title">Visual Step-By-Step Setup &amp; Usage</h2>
         <p class="section-desc">
-          Follow along with screenshots and glowing pointer arrows showing exactly where to click, how to install Linux, and run code.
+          Follow along with genuine Android screenshots from Code Editor showing how to bootstrap Linux, auto-install compilers from CDN, create files, and run code.
         </p>
       </div>
 
+      <!-- PHASE 1: LINUX ENVIRONMENT SETUP -->
+      <div class="phase-divider">
+        <span class="phase-pill">Phase 1 • Linux Environment Bootstrap (~31 MB)</span>
+        <div class="phase-line"></div>
+      </div>
+
       <div class="visual-guide-container">
-        <!-- Step 1: Open App & Explorer Drawer -->
-        <div class="visual-step-card">
+        <!-- Step 1: Launch App & Open Explorer Drawer -->
+        <div class="visual-step-card wide-media">
           <div class="step-info-col">
-            <div class="step-badge">STEP 1 • OPEN PROJECT EXPLORER</div>
-            <h3 class="step-title">Tap Three Lines (≡) Menu to Open Explorer</h3>
+            <div class="step-badge">STEP 1 • LAUNCH &amp; OPEN EXPLORER</div>
+            <h3 class="step-title">Launch App &amp; Tap Three Lines (≡) Menu</h3>
             <p class="step-desc">
-              When you launch <strong>Code Editor</strong>, tap the <strong>Three Lines (≡)</strong> icon on the top-left toolbar (pointed by the red arrow) to slide open the <strong>EXPLORER</strong> drawer on the left.
+              When you launch <strong>Code Editor</strong>, the main IDE opens with default starter code. Notice the terminal banner at the bottom prompting you to initialize the Linux subsystem.
             </p>
             <ul class="action-checklist">
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Click 1:</strong> Tap the <strong>Three Lines (≡)</strong> button in the top action bar.</div>
+                <div><span class="pointer-pill">Step 1</span> Tap the <strong>Three Lines (≡)</strong> hamburger icon on the top-left toolbar.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Explorer Slides Open:</strong> Displays your project structure (<code>CppStarter</code>), default source files (<code>main.cpp</code>, <code>index.html</code>), and explorer management controls.</div>
+                <div><strong>Terminal Notification:</strong> <code>⚡ Type 'pkg setup' or tap Menu &gt; 'Install Linux Environment' to enable Clang, Python, and pkg package manager.</code></div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Add Files [+]:</strong> Tap the <strong>[+]</strong> icon in the explorer header to create new files or folders anytime.</div>
+                <div><strong>Explorer Drawer Slides Open:</strong> Displays your project structure (<code>CPPSTARTER</code>), default source files (<code>main.cpp</code>), and action bar.</div>
               </li>
             </ul>
           </div>
           <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/guide-step1-open-explorer.svg')">
-              <img src="assets/images/guide-step1-open-explorer.svg" alt="Step 1 - Open Explorer Drawer with Red Arrow" />
-              <div class="zoom-hint">🔍 Tap to Zoom</div>
+            <div class="dual-frames">
+              <div class="dual-frame-item">
+                <div class="frame-label">A. First Launch Prompt</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step1-main-screen.jpg')">
+                  <img src="assets/images/real-step1-main-screen.jpg" alt="First Launch Main Screen with Terminal Hint" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+              <div class="dual-frame-item">
+                <div class="frame-label">B. Tap (≡) Explorer</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step2-explorer-drawer.jpg')">
+                  <img src="assets/images/real-step2-explorer-drawer.jpg" alt="Explorer Drawer Slides Open" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Step 2: Three-Dots Menu & Install Linux -->
+        <!-- Step 2: Three-Dots Menu & Install Linux Option -->
         <div class="visual-step-card reverse">
           <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/guide-step2-three-dots-menu.svg')">
-              <img src="assets/images/guide-step2-three-dots-menu.svg" alt="Step 2 - Three-Dots Menu and Install Linux" />
+            <div class="mobile-frame" onclick="openLightbox('assets/images/real-step3-menu-options.jpg')">
+              <img src="assets/images/real-step3-menu-options.jpg" alt="Three Dots Menu with Install Linux Environment Option" />
               <div class="zoom-hint">🔍 Tap to Zoom</div>
             </div>
           </div>
           <div class="step-info-col">
             <div class="step-badge">STEP 2 • THREE-DOTS (⋮) MENU</div>
-            <h3 class="step-title">Tap Three-Dots (⋮) &amp; Select "Install Linux"</h3>
+            <h3 class="step-title">Tap Three-Dots (⋮) &amp; Choose "Install Linux"</h3>
             <p class="step-desc">
-              Inside the Explorer panel header, tap the <strong>Three-Dots (⋮)</strong> icon on the right side. A popup dropdown menu opens showing core system options.
+              Inside the Explorer panel header, tap the <strong>Three-Dots (⋮)</strong> menu button to reveal core IDE tools and environment actions.
             </p>
             <ul class="action-checklist">
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Click 2:</strong> Tap the <strong>Three-Dots (⋮)</strong> icon (pointed by the top red arrow).</div>
+                <div><span class="pointer-pill">Step 2</span> Tap the <strong>Three-Dots (⋮)</strong> icon in the top right of the Explorer header.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Click 3:</strong> Tap <strong>"⚡ Install Linux Environment"</strong> in the popup menu (highlighted with the red box &amp; arrow).</div>
+                <div><span class="pointer-pill green">Step 3</span> Tap <strong>"⚡ Install Linux Environment"</strong> from the popup list.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Core Options:</strong> You can also access <code>🛠️ Compiler Setup Guide</code>, <code>&gt;_ Open Terminal</code>, and <code>⚙️ Editor Settings</code> here.</div>
+                <div><strong>Other Quick Tools:</strong> You can also access <code>&gt;_ Open Terminal</code>, <code>⚙️ Editor Settings</code>, and <code>🛠️ Compiler Setup Guide</code> directly here.</div>
               </li>
             </ul>
           </div>
         </div>
 
-        <!-- Step 3: Install Linux Environment Confirmation & Progress -->
-        <div class="visual-step-card">
+        <!-- Step 3: Install Linux Confirmation & Download Progress -->
+        <div class="visual-step-card wide-media">
           <div class="step-info-col">
-            <div class="step-badge">STEP 3 • LINUX ENVIRONMENT SETUP</div>
+            <div class="step-badge">STEP 3 • 1-TAP LINUX INSTALLATION</div>
             <h3 class="step-title">Tap "Install Now" &amp; Watch Progress Bar</h3>
             <p class="step-desc">
-              A confirmation dialog appears confirming the one-time installation of the official Termux Linux package system (~31 MB).
+              A dialog modal details the embedded Linux system (~31 MB). No third-party apps, no root access, and no manual terminal commands are needed.
             </p>
             <ul class="action-checklist">
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Click 4:</strong> Tap <strong>"Install Now"</strong> in the confirmation dialog.</div>
+                <div><span class="pointer-pill green">Step 4</span> Tap <strong>"Install Now"</strong> in the confirmation dialog.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Horizontal Progress Bar:</strong> The app extracts the bootstrap rootfs system automatically. You will see a live progress bar reaching 100% in ~15 seconds.</div>
+                <div><strong>Automated Bootstrap:</strong> Installs bash, apt, and the full pkg package manager directly into app storage.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Success Toast:</strong> A green toast confirms: <em>"Termux Linux environment installed successfully!"</em></div>
+                <div><strong>Live Horizontal Progress Bar:</strong> Displays <code>Downloading core Linux packages (23MB / 31MB)... 51%</code> and finishes in ~10 seconds.</div>
               </li>
             </ul>
           </div>
           <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/guide-step3-install-linux.svg')">
-              <img src="assets/images/guide-step3-install-linux.svg" alt="Step 3 - Linux Installation Dialog and Progress Bar" />
-              <div class="zoom-hint">🔍 Tap to Zoom</div>
+            <div class="dual-frames">
+              <div class="dual-frame-item">
+                <div class="frame-label">A. Confirmation Dialog</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step4-install-dialog.jpg')">
+                  <img src="assets/images/real-step4-install-dialog.jpg" alt="Install Linux Confirmation Dialog" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+              <div class="dual-frame-item">
+                <div class="frame-label">B. Download Progress</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step5-downloading-linux.jpg')">
+                  <img src="assets/images/real-step5-downloading-linux.jpg" alt="Linux Package Download Progress Bar" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Step 4: Install Compilers & Toolchains -->
+        <!-- Step 4: Linux Ready & Terminal Shell Active -->
         <div class="visual-step-card reverse">
           <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/guide-step4-install-toolchain.svg')">
-              <img src="assets/images/guide-step4-install-toolchain.svg" alt="Step 4 - Compiler Setup Guide and Package Installation" />
+            <div class="mobile-frame" onclick="openLightbox('assets/images/real-step6-linux-ready.jpg')">
+              <img src="assets/images/real-step6-linux-ready.jpg" alt="Linux Ready Notification in Terminal" />
               <div class="zoom-hint">🔍 Tap to Zoom</div>
             </div>
           </div>
           <div class="step-info-col">
-            <div class="step-badge">STEP 4 • COMPILERS &amp; LIBRARIES</div>
-            <h3 class="step-title">Install Language Toolchains &amp; Packages</h3>
+            <div class="step-badge">STEP 4 • LINUX READY</div>
+            <h3 class="step-title">Embedded Linux Userland Initialized</h3>
             <p class="step-desc">
-              You can install any language compiler (Rust, Python, Clang C++, Java, Node.js) through the built-in guide or directly via the terminal.
+              The terminal automatically confirms successful deployment of the Linux bash environment and package manager.
             </p>
             <ul class="action-checklist">
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Method A (In-App Guide):</strong> Tap <strong>Three-Dots (⋮) &gt; 🛠️ Compiler Setup Guide</strong>. Select any language and tap <strong>Install</strong> (pointed by red arrow).</div>
+                <div><strong>Terminal Notification:</strong> <code>[Termux Linux Ready - /data/user/0/com.termux/files/usr/bin/bash]</code></div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Method B (Terminal Command):</strong> Open terminal and type <code>pkg install clang</code>, <code>pkg install python</code>, or <code>pkg install rust</code>.</div>
+                <div><strong>Shell Ready:</strong> <code>Try: 'pkg install clang' or 'pkg install python'</code></div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Fast CDN:</strong> Pre-compiled ARM64 native binaries download in seconds and unpack directly into your app environment!</div>
+                <div>Your Android device is now a fully functional offline development workstation.</div>
               </li>
             </ul>
-            <div class="code-cmd-box"><span class="prompt">$</span>pkg install clang python rust nodejs</div>
           </div>
         </div>
+      </div>
 
-        <!-- Step 5: Write Code & Smart Keyboard Bar -->
-        <div class="visual-step-card">
+      <!-- PHASE 2: AUTOMATED COMPILER CDN DOWNLOAD & C++ RUN -->
+      <div class="phase-divider">
+        <span class="phase-pill">Phase 2 • 1-Click Toolchain CDN &amp; Real Execution</span>
+        <div class="phase-line"></div>
+      </div>
+
+      <div class="visual-guide-container">
+        <!-- Step 5: Automated Toolchain Download from GitHub CDN -->
+        <div class="visual-step-card wide-media">
           <div class="step-info-col">
-            <div class="step-badge">STEP 5 • WRITE CODE &amp; HIT RUN (▶)</div>
-            <h3 class="step-title">Code with Keyboard Bar &amp; Tap RUN</h3>
+            <div class="step-badge">STEP 5 • AUTO COMPILER CDN DOWNLOAD</div>
+            <h3 class="step-title">Tap RUN (▶) — Zero-Config Toolchain Download</h3>
             <p class="step-desc">
-              Open your code file (e.g. <code>main.cpp</code>, <code>main.rs</code>, <code>index.html</code>) and code comfortably with mobile-optimized tools.
+              You do not need to configure build paths or manually hunt for compilers. Simply hit <strong>RUN (▶)</strong>!
             </p>
             <ul class="action-checklist">
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Multi-Tab Editor:</strong> Work with multiple open files across tabs (e.g. <code>main.cpp</code>, <code>main.rs</code>, <code>index.html</code>).</div>
+                <div><span class="pointer-pill green">Step 5</span> Tap <strong>RUN</strong> in the top action bar on <code>main.cpp</code>.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Mobile Coding Bar:</strong> Tap <code>Tab</code>, <code>{}</code>, <code>()</code>, <code>""</code>, <code>;</code>, and language keywords with 1 tap right above your keyboard.</div>
+                <div><strong>TermCode Package Manager:</strong> Detects that Clang (C/C++) is missing and connects directly to <strong>TermCode GitHub CDN</strong>.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Click 5 (RUN ▶):</strong> Tap the green <strong>RUN (▶)</strong> button in the top action bar (pointed by red arrow). Code Editor saves your code and compiles it natively!</div>
+                <div><strong>High-Speed CDN:</strong> Downloads <code>c_cpp.zip</code> (207 MB) with real-time percentage progress bar.</div>
               </li>
             </ul>
           </div>
           <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/guide-step5-write-and-run.svg')">
-              <img src="assets/images/guide-step5-write-and-run.svg" alt="Step 5 - Code Editor with Mobile Keyboard Bar and RUN Button" />
-              <div class="zoom-hint">🔍 Tap to Zoom</div>
+            <div class="dual-frames">
+              <div class="dual-frame-item">
+                <div class="frame-label">A. Auto Compiler Trigger</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step7-auto-compiler-trigger.jpg')">
+                  <img src="assets/images/real-step7-auto-compiler-trigger.jpg" alt="Auto Compiler Installation Trigger" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+              <div class="dual-frame-item">
+                <div class="frame-label">B. CDN Download (46%)</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step8-compiler-downloading.jpg')">
+                  <img src="assets/images/real-step8-compiler-downloading.jpg" alt="Downloading c_cpp.zip from GitHub CDN" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
 
-        <!-- Step 6: Interactive Terminal Output & Web Preview -->
+        <!-- Step 6: Native Extraction & First Real C++ Output -->
+        <div class="visual-step-card wide-media reverse">
+          <div class="step-img-col">
+            <div class="dual-frames">
+              <div class="dual-frame-item">
+                <div class="frame-label">A. Native Extraction</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step9-compiler-extracting.jpg')">
+                  <img src="assets/images/real-step9-compiler-extracting.jpg" alt="Extracting Clang and GCC into Linux" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+              <div class="dual-frame-item">
+                <div class="frame-label">B. Real Clang++ Output</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step10-compile-run-output.jpg')">
+                  <img src="assets/images/real-step10-compile-run-output.jpg" alt="C++ Compilation and Terminal Output" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="step-info-col">
+            <div class="step-badge">STEP 6 • LIVE COMPILATION &amp; OUTPUT</div>
+            <h3 class="step-title">Toolchain Extracted &amp; Native Clang++ Output</h3>
+            <p class="step-desc">
+              The app unpacks the toolchain into your Linux userland and executes the compiler seamlessly without leaving the editor.
+            </p>
+            <ul class="action-checklist">
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Automatic Unpack:</strong> <code>Extracting Clang &amp; GCC (C/C++) into Linux environment... 68%</code>.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Terminal Notification:</strong> <code>✓ Library is installed successfully!</code></div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Native Execution Command:</strong> <code>$ clang++ -std=c++17 "main.cpp" -o "main.out" &amp;&amp; ./"main.out"</code></div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Real Program Output:</strong> <strong style="color: #38bdf8;">Hello from C++ in Code Editor!</strong> with <code>[Process completed successfully (exit code 0)]</code>.</div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- PHASE 3: FILE MANAGEMENT & MULTI-LANGUAGE CODING -->
+      <div class="phase-divider">
+        <span class="phase-pill">Phase 3 • Project Files &amp; Multi-Language Coding</span>
+        <div class="phase-line"></div>
+      </div>
+
+      <div class="visual-guide-container">
+        <!-- Step 7: Create New Files & Folders -->
+        <div class="visual-step-card wide-media">
+          <div class="step-info-col">
+            <div class="step-badge">STEP 7 • CREATE NEW FILES &amp; FOLDERS</div>
+            <h3 class="step-title">Tap [📁+] to Create New Files or Projects</h3>
+            <p class="step-desc">
+              Managing files is simple. Create new code files, nested directories, or open external folders from your device storage anytime.
+            </p>
+            <ul class="action-checklist">
+              <li>
+                <div class="check-icon">✓</div>
+                <div><span class="pointer-pill">Step 6</span> In the Explorer header, tap the <strong>Folder/Add [📁+]</strong> button.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>Options Menu:</strong> Select <code>📄 New File</code>, <code>📁 New Folder</code>, <code>📂 Open Folder (Device Storage)</code>, or <code>📄 Open File</code>.</div>
+              </li>
+              <li>
+                <div class="check-icon">✓</div>
+                <div><strong>New File Dialog:</strong> Type your filename (e.g. <code>main.c</code>, <code>main.py</code>, <code>index.html</code>) and tap <strong>Create</strong>.</div>
+              </li>
+            </ul>
+          </div>
+          <div class="step-img-col">
+            <div class="dual-frames">
+              <div class="dual-frame-item">
+                <div class="frame-label">A. Explorer [📁+] Menu</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step11-explorer-add-menu.jpg')">
+                  <img src="assets/images/real-step11-explorer-add-menu.jpg" alt="Explorer New File and Folder Dropdown" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+              <div class="dual-frame-item">
+                <div class="frame-label">B. New File Dialog</div>
+                <div class="mobile-frame" onclick="openLightbox('assets/images/real-step12-new-file-dialog.jpg')">
+                  <img src="assets/images/real-step12-new-file-dialog.jpg" alt="Create New File Dialog naming main.c" />
+                  <div class="zoom-hint">🔍 Zoom</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Step 8: Multi-File Tabs & Native C Compilation Output -->
         <div class="visual-step-card reverse">
           <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/guide-step6-terminal-output.svg')">
-              <img src="assets/images/guide-step6-terminal-output.svg" alt="Step 6 - Terminal Output and Live Interactive Input" />
+            <div class="mobile-frame" onclick="openLightbox('assets/images/real-step13-c-code-run-output.jpg')">
+              <img src="assets/images/real-step13-c-code-run-output.jpg" alt="Multi Tab Bar with main.cpp and main.c running Clang C" />
               <div class="zoom-hint">🔍 Tap to Zoom</div>
             </div>
           </div>
           <div class="step-info-col">
-            <div class="step-badge">STEP 6 • TERMINAL OUTPUT &amp; WEB PREVIEW</div>
-            <h3 class="step-title">Interactive Terminal Output &amp; Live Browser</h3>
+            <div class="step-badge">STEP 8 • MULTI-TAB &amp; C EXECUTION</div>
+            <h3 class="step-title">Multi-Tab Bar &amp; Native C Execution</h3>
             <p class="step-desc">
-              The terminal drawer slides up automatically with full ANSI color output and real-time interactive input support.
+              Your newly created <code>main.c</code> appears right beside <code>main.cpp</code> in the horizontal tab bar with language-specific vector badges.
             </p>
             <ul class="action-checklist">
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Real Native Output:</strong> View compilation status and program output (e.g. <code>clang++ -std=c++17 main.cpp -o main.out &amp;&amp; ./main.out</code>).</div>
+                <div><strong>Horizontal Tab Bar:</strong> Switch between open files instantly with VS Code-like multi-file tabs.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Interactive User Input:</strong> If your code asks for input (like <code>cin &gt;&gt; a</code> or <code>input()</code>), type directly into <strong>$ Type command or input...</strong> at the bottom of the terminal!</div>
+                <div><strong>Mobile Keyboard Helper Bar:</strong> Single-tap access to <code>#include</code>, <code>stdio.h</code>, <code>printf</code>, <code>Tab</code>, <code>{}</code>, <code>()</code>, <code>;</code> right above the keyboard.</div>
               </li>
               <li>
                 <div class="check-icon">✓</div>
-                <div><strong>Live Web Preview:</strong> For <code>index.html</code> web projects, the IDE launches the built-in <strong>Web Preview Browser</strong> dialog so you can test buttons, CSS, and UI live!</div>
+                <div><span class="pointer-pill green">RUN</span> Tap <strong>RUN (▶)</strong>: Clang compiles <code>main.c</code> and immediately outputs <strong>"Hello from C in Code Editor!"</strong> with exit code 0!</div>
               </li>
             </ul>
           </div>
         </div>
+      </div>
+    </section>
 
-        <!-- Step 7: Official File Extensions Matrix -->
-        <div class="visual-step-card" id="matrix">
-          <div class="step-info-col">
-            <div class="step-badge">REFERENCE • FILE EXTENSIONS MATRIX</div>
-            <h3 class="step-title">Official Starter Files For All 15 Languages</h3>
-            <p class="step-desc">
-              Every language has a standardized default entry file configured in the app. Use this quick reference when creating new projects:
-            </p>
-            <ul class="action-checklist">
-              <li>
-                <div class="check-icon">✓</div>
-                <div><strong>C / C++ / C#:</strong> <code>main.c</code> • <code>main.cpp</code> • <code>Program.cs</code></div>
-              </li>
-              <li>
-                <div class="check-icon">✓</div>
-                <div><strong>Python / Java / Rust:</strong> <code>main.py</code> • <code>Main.java</code> • <code>main.rs</code></div>
-              </li>
-              <li>
-                <div class="check-icon">✓</div>
-                <div><strong>JavaScript / TypeScript / Go:</strong> <code>main.js</code> • <code>main.ts</code> • <code>main.go</code></div>
-              </li>
-              <li>
-                <div class="check-icon">✓</div>
-                <div><strong>Kotlin / PHP / Ruby / Lua:</strong> <code>Main.kt</code> • <code>index.php</code> • <code>main.rb</code> • <code>main.lua</code></div>
-              </li>
-              <li>
-                <div class="check-icon">✓</div>
-                <div><strong>Web Development:</strong> <code>index.html</code> &amp; <code>style.css</code> (In-App Live Browser)</div>
-              </li>
-            </ul>
+    <!-- IN-APP COMPILERS & FULL-STACK SETUP GUIDE -->
+    <section id="in-app-guide">
+      <div class="section-head">
+        <div class="section-eyebrow">Built-In Language Reference</div>
+        <h2 class="section-title">In-App Multi-Language Setup Guide</h2>
+        <p class="section-desc">
+          Code Editor includes a comprehensive built-in compiler and package installation guide directly inside the app. Check out the real screenshots from the in-app guide below:
+        </p>
+      </div>
+
+      <div class="inapp-grid">
+        <!-- Guide Part 1 -->
+        <div class="inapp-card">
+          <div class="mobile-frame" onclick="openLightbox('assets/images/real-guide-compilers-1.jpg')">
+            <img src="assets/images/real-guide-compilers-1.jpg" alt="In-App Guide: C, C++, C#, Python" />
+            <div class="zoom-hint">🔍 Tap to Zoom</div>
           </div>
-          <div class="step-img-col">
-            <div class="mobile-frame" onclick="openLightbox('assets/images/languages-matrix.jpg')">
-              <img src="assets/images/languages-matrix.jpg" alt="Official Languages List" />
-              <div class="zoom-hint">🔍 Tap to Zoom</div>
+          <div class="inapp-card-title">1. Systems &amp; Interpreted</div>
+          <div class="inapp-card-desc">
+            Quick commands &amp; auto-installers for <strong>C</strong> (<code>pkg install clang</code>), <strong>C++</strong> (C++17/20), <strong>C#</strong> (<code>pkg install mono</code>), and <strong>Python 3.12+</strong> (<code>pkg install python</code>).
+          </div>
+        </div>
+
+        <!-- Guide Part 2 -->
+        <div class="inapp-card">
+          <div class="mobile-frame" onclick="openLightbox('assets/images/real-guide-compilers-2.jpg')">
+            <img src="assets/images/real-guide-compilers-2.jpg" alt="In-App Guide: Java, Node, TypeScript, Go, Rust" />
+            <div class="zoom-hint">🔍 Tap to Zoom</div>
+          </div>
+          <div class="inapp-card-title">2. Enterprise &amp; Modern</div>
+          <div class="inapp-card-desc">
+            Full support for <strong>Java</strong> (<code>pkg install openjdk-21</code>), <strong>Node.js</strong> &amp; <strong>TypeScript</strong> (<code>ts-node</code>), <strong>Go</strong> (<code>pkg install golang</code>), and <strong>Rust</strong> (<code>pkg install rust</code>).
+          </div>
+        </div>
+
+        <!-- Guide Part 3 -->
+        <div class="inapp-card">
+          <div class="mobile-frame" onclick="openLightbox('assets/images/real-guide-compilers-3.jpg')">
+            <img src="assets/images/real-guide-compilers-3.jpg" alt="In-App Guide: Kotlin, PHP, Ruby" />
+            <div class="zoom-hint">🔍 Tap to Zoom</div>
+          </div>
+          <div class="inapp-card-title">3. Mobile &amp; Scripting</div>
+          <div class="inapp-card-desc">
+            Pre-configured runtimes for <strong>Kotlin</strong> (<code>pkg install kotlin</code>), <strong>PHP 8+</strong> (<code>pkg install php</code>), and <strong>Ruby 3+</strong> (<code>pkg install ruby</code>).
+          </div>
+        </div>
+
+        <!-- Guide Part 4 -->
+        <div class="inapp-card">
+          <div class="mobile-frame" onclick="openLightbox('assets/images/real-guide-web-fullstack.jpg')">
+            <img src="assets/images/real-guide-web-fullstack.jpg" alt="In-App Guide: Lua, Web Dev, Full-Stack Node.js" />
+            <div class="zoom-hint">🔍 Tap to Zoom</div>
+          </div>
+          <div class="inapp-card-title">4. Web, Full-Stack &amp; Tools</div>
+          <div class="inapp-card-desc">
+            <strong>Lua 5.4</strong>, <strong>HTML/CSS Web Live Browser Preview</strong>, <strong>Full-Stack Node.js (package.json / npm)</strong>, and custom package tools (<code>pkg install git make cmake</code>).
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- STANDALONE SPECS & OPEN SOURCE COMPLIANCE -->
+    <section id="about-compliance">
+      <div class="section-head">
+        <div class="section-eyebrow">Specifications &amp; Integrity</div>
+        <h2 class="section-title">Standalone IDE Specs &amp; Open Source Compliance</h2>
+        <p class="section-desc">
+          Code Editor is completely self-contained and strictly adheres to all open-source licensing standards.
+        </p>
+      </div>
+
+      <!-- Compliance Grid -->
+      <div class="compliance-banner">
+        <div>
+          <div class="step-badge" style="background: rgba(56, 189, 248, 0.12); color: #38bdf8; border-color: rgba(56, 189, 248, 0.3);">OFFICIAL APP ARCHITECTURE</div>
+          <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 14px;">Code Editor v2.2 Architecture</h3>
+          <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.6; margin-bottom: 20px;">
+            A universal, multi-language standalone mobile IDE powered by an embedded Linux userland. No background spyware, no forced subscriptions, and zero external dependencies required.
+          </p>
+          <ul class="action-checklist">
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Multi-File Horizontal Tab Bar:</strong> VS Code &amp; Spck-style responsive tab management.</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Zero-Config Automated Toolchain CDN Installer:</strong> Instant 0–100% progress download from high-speed CDN.</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Built-in Linux Terminal:</strong> Complete with full bash and <code>pkg</code> / <code>apt</code> package management.</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Two-Tier Coding Accessory Bar:</strong> Fast access to language keywords, symbols, and formatting keys.</div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="mobile-frame" onclick="openLightbox('assets/images/real-about-code-editor-v2.jpg')">
+            <img src="assets/images/real-about-code-editor-v2.jpg" alt="Code Editor v2.2 About Specifications Dialog" />
+            <div class="zoom-hint">🔍 Tap to Zoom</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Licenses Grid -->
+      <div class="compliance-banner" style="margin-top: 30px;">
+        <div>
+          <div class="step-badge" style="background: rgba(16, 185, 129, 0.12); color: #34d399; border-color: rgba(16, 185, 129, 0.3);">FULL LICENSE COMPLIANCE</div>
+          <h3 style="font-size: 1.8rem; font-weight: 800; color: #ffffff; margin-bottom: 14px;">Open Source Licenses &amp; Credits</h3>
+          <p style="color: var(--text-muted); font-size: 0.98rem; line-height: 1.6; margin-bottom: 20px;">
+            Code Editor honors the open-source community by strictly adhering to the terms of GPLv3, GPLv2, Apache 2.0, and PSF-2.0 licenses. External binaries run as standalone aggregate processes.
+          </p>
+          <ul class="action-checklist">
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Termux Project:</strong> GNU General Public License v3.0 (GPLv3) — Terminal emulator &amp; PTY engine.</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>LLVM &amp; Clang:</strong> Apache 2.0 License with LLVM Exception — C &amp; C++ compiler toolchains.</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Python 3 Runtime:</strong> Python Software Foundation License (PSF-2.0).</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>GNU Project &amp; BusyBox:</strong> GNU General Public License (GPLv3 &amp; GPLv2) — Bash &amp; core utilities.</div>
+            </li>
+            <li>
+              <div class="check-icon">✓</div>
+              <div><strong>Android Open Source Project (AOSP):</strong> Apache License 2.0 — Material Components &amp; SAF.</div>
+            </li>
+          </ul>
+        </div>
+        <div>
+          <div class="dual-frames">
+            <div class="dual-frame-item">
+              <div class="frame-label">Credits Part 1</div>
+              <div class="mobile-frame" onclick="openLightbox('assets/images/real-licenses-credits-1.jpg')">
+                <img src="assets/images/real-licenses-credits-1.jpg" alt="Open Source Licenses Part 1" />
+                <div class="zoom-hint">🔍 Zoom</div>
+              </div>
+            </div>
+            <div class="dual-frame-item">
+              <div class="frame-label">Credits Part 2</div>
+              <div class="mobile-frame" onclick="openLightbox('assets/images/real-licenses-credits-2.jpg')">
+                <img src="assets/images/real-licenses-credits-2.jpg" alt="Open Source Licenses Part 2" />
+                <div class="zoom-hint">🔍 Zoom</div>
+              </div>
             </div>
           </div>
         </div>
@@ -604,10 +871,12 @@
           </div>
         </div>
 
-        <div style="display: flex; gap: 20px;">
+        <div style="display: flex; flex-wrap: wrap; gap: 20px;">
           <a href="#download" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">Download</a>
           <a href="#visual-guide" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">Setup Guidelines</a>
+          <a href="#in-app-guide" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">Compilers Guide</a>
           <a href="#languages" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">Languages</a>
+          <a href="#about-compliance" style="color: #94a3b8; text-decoration: none; font-size: 0.9rem;">Specs &amp; Licenses</a>
         </div>
       </div>
 
