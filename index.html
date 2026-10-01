@@ -139,10 +139,10 @@
     }
 
     .brand-logo-img {
-      width: 46px;
-      height: 46px;
-      border-radius: 12px;
-      box-shadow: 0 0 24px rgba(99, 102, 241, 0.45);
+      width: 38px;
+      height: 38px;
+      border-radius: 10px;
+      box-shadow: 0 0 16px rgba(99, 102, 241, 0.35);
       border: 1px solid rgba(255, 255, 255, 0.15);
       background: #111827;
       object-fit: contain;
@@ -319,22 +319,79 @@
       transform: translateY(-2px);
     }
 
-    /* App Banner / Visual Showcase */
-    .app-banner-card {
-      max-width: 900px;
-      margin: 0 auto 50px;
-      border-radius: 24px;
-      overflow: hidden;
-      border: 1px solid rgba(99, 102, 241, 0.3);
-      box-shadow: 0 20px 60px rgba(0, 0, 0, 0.6);
-      background: #0c1220;
+    /* Hero App Icon Showcase */
+    .hero-icon-wrapper {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
     }
 
-    .app-banner-img {
-      width: 100%;
-      height: auto;
-      display: block;
+    .hero-app-icon {
+      width: 96px;
+      height: 96px;
+      border-radius: 22px;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      box-shadow: 0 10px 25px rgba(99, 102, 241, 0.4), 0 0 20px rgba(6, 182, 212, 0.25);
       object-fit: cover;
+      background: #0f172a;
+      transition: transform 0.3s ease;
+    }
+
+    .hero-app-icon:hover {
+      transform: translateY(-3px) scale(1.04);
+      box-shadow: 0 14px 35px rgba(99, 102, 241, 0.55);
+    }
+
+    /* Key Specs Highlights Row */
+    .specs-row {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+      gap: 16px;
+      max-width: 960px;
+      margin: 0 auto 30px;
+    }
+
+    .spec-item {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      padding: 16px 20px;
+      backdrop-filter: blur(12px);
+      text-align: left;
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      transition: border-color 0.2s, transform 0.2s;
+    }
+
+    .spec-item:hover {
+      border-color: var(--border-glow);
+      transform: translateY(-2px);
+    }
+
+    .spec-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.25rem;
+      background: rgba(99, 102, 241, 0.12);
+      color: var(--primary);
+      flex-shrink: 0;
+    }
+
+    .spec-title {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.2;
+    }
+
+    .spec-sub {
+      font-size: 0.76rem;
+      color: var(--text-muted);
     }
 
     /* Download Portal Card */
@@ -872,6 +929,10 @@
   <main class="container">
     <!-- Hero Section -->
     <section class="hero">
+      <div class="hero-icon-wrapper">
+        <img src="assets/images/logo-banner.jpg" alt="Code Editor App Icon" class="hero-app-icon" />
+      </div>
+
       <div class="badge-pill">
         <span class="badge-dot"></span>
         Latest Official Build v1.0.0 Debug • Android 7.0 to Android 15
@@ -896,9 +957,36 @@
         </a>
       </div>
 
-      <!-- App Banner Artwork -->
-      <div class="app-banner-card">
-        <img src="assets/images/logo-banner.jpg" alt="Code Editor Branding Banner" class="app-banner-img" />
+      <!-- Highlights Specs Row -->
+      <div class="specs-row">
+        <div class="spec-item">
+          <div class="spec-icon">⚡</div>
+          <div>
+            <div class="spec-title">15+ Compilers</div>
+            <div class="spec-sub">Native LLVM & interpreters</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">🔒</div>
+          <div>
+            <div class="spec-title">100% Offline</div>
+            <div class="spec-sub">Zero root required</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">🌐</div>
+          <div>
+            <div class="spec-title">Full-Stack & Web</div>
+            <div class="spec-sub">Node.js + Live HTML preview</div>
+          </div>
+        </div>
+        <div class="spec-item">
+          <div class="spec-icon">📦</div>
+          <div>
+            <div class="spec-title">11.96 MB Build</div>
+            <div class="spec-sub">Battery optimized & fast</div>
+          </div>
+        </div>
       </div>
     </section>
 
