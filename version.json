@@ -1,0 +1,8 @@
+{
+  "versionCode": 1,
+  "versionName": "1.0.0",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-debug.apk",
+  "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
+  "releaseNotes": "Initial release: 15+ offline compilers, embedded Linux environment, mobile quick coding toolbar, interactive terminal, and live HTML web preview.",
+  "publishedAt": "2026-10-01"
+}
