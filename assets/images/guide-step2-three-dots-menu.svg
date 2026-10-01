@@ -1,0 +1,96 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 380 720" width="100%" height="100%">
+  <defs>
+    <linearGradient id="phoneBg2" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0a0f1d"/>
+      <stop offset="100%" stop-color="#050811"/>
+    </linearGradient>
+    <filter id="shadow2" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="8" stdDeviation="12" flood-color="#000000" flood-opacity="0.6"/>
+    </filter>
+    <filter id="glowRed2" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="0" stdDeviation="6" flood-color="#f43f5e" flood-opacity="0.85"/>
+    </filter>
+  </defs>
+
+  <!-- Phone Frame -->
+  <rect x="10" y="10" width="360" height="700" rx="36" fill="url(#phoneBg2)" stroke="#1e293b" stroke-width="4" filter="url(#shadow2)"/>
+  <rect x="16" y="16" width="348" height="688" rx="30" fill="#0d111a"/>
+
+  <!-- Status Bar -->
+  <text x="36" y="42" fill="#94a3b8" font-family="-apple-system, Roboto, sans-serif" font-size="12" font-weight="600">11:09</text>
+  <rect x="330" y="32" width="18" height="11" rx="2" fill="none" stroke="#94a3b8" stroke-width="1.5"/>
+  <rect x="332" y="34" width="12" height="7" rx="1" fill="#10b981"/>
+
+  <!-- App Header -->
+  <rect x="16" y="54" width="348" height="52" fill="#131b2e" stroke="#1e293b" stroke-width="1"/>
+  <text x="36" y="85" fill="#f8fafc" font-family="-apple-system, Roboto, sans-serif" font-size="15" font-weight="700">Code Editor</text>
+
+  <!-- Left Explorer Drawer Background (Dimmed slightly) -->
+  <rect x="16" y="106" width="280" height="560" fill="#111827" stroke="#1e293b" stroke-width="1.5"/>
+  
+  <!-- Explorer Header -->
+  <rect x="16" y="106" width="280" height="44" fill="#0f172a" stroke="#1e293b" stroke-width="1"/>
+  <text x="32" y="133" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13" font-weight="800">EXPLORER</text>
+  
+  <!-- Three dots icon in Explorer -->
+  <circle cx="274" cy="124" r="2.5" fill="#ffffff"/>
+  <circle cx="274" cy="128" r="2.5" fill="#ffffff"/>
+  <circle cx="274" cy="132" r="2.5" fill="#ffffff"/>
+
+  <!-- File list under menu -->
+  <g transform="translate(30, 160)" opacity="0.4">
+    <text x="0" y="15" fill="#64748b" font-family="monospace" font-size="11">CPPSTARTER</text>
+    <text x="24" y="38" fill="#e2e8f0" font-family="monospace" font-size="13">main.cpp</text>
+    <text x="24" y="68" fill="#94a3b8" font-family="monospace" font-size="13">index.html</text>
+    <text x="24" y="98" fill="#94a3b8" font-family="monospace" font-size="13">main.rs</text>
+  </g>
+
+  <!-- Popup Dropdown Menu (Realistic Android Material 3 Dark) -->
+  <g transform="translate(100, 140)" filter="url(#shadow2)">
+    <rect x="0" y="0" width="245" height="295" rx="14" fill="#1e293b" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Menu Item 1: Open Terminal -->
+    <rect x="6" y="6" width="233" height="38" rx="8" fill="transparent"/>
+    <text x="20" y="30" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13.5">&gt;_ Open Terminal</text>
+
+    <!-- Menu Item 2: Install Linux Environment (CLICK TARGET) -->
+    <rect x="6" y="46" width="233" height="42" rx="8" fill="#312e81" stroke="#818cf8" stroke-width="1.5"/>
+    <text x="20" y="72" fill="#a5b4fc" font-family="-apple-system, sans-serif" font-size="14" font-weight="700">⚡ Install Linux Environment</text>
+
+    <!-- Menu Item 3: Editor Settings -->
+    <text x="20" y="112" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13.5">⚙️ Editor Settings</text>
+
+    <!-- Menu Item 4: Compiler Setup Guide -->
+    <text x="20" y="152" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13.5">🛠️ Compiler Setup Guide</text>
+
+    <!-- Menu Item 5: Licenses & Credits -->
+    <text x="20" y="192" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13.5">📜 Licenses &amp; Credits</text>
+
+    <!-- Menu Item 6: About Code Editor -->
+    <text x="20" y="232" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13.5">ℹ️ About Code Editor</text>
+
+    <!-- Menu Item 7: Reset to CppStarter -->
+    <text x="20" y="272" fill="#cbd5e1" font-family="-apple-system, sans-serif" font-size="13.5">🏠 Reset to CppStarter</text>
+  </g>
+
+  <!-- RED ARROW & ANNOTATIONS -->
+  <g filter="url(#glowRed2)">
+    <!-- Red circle around three dots -->
+    <circle cx="274" cy="128" r="14" fill="none" stroke="#f43f5e" stroke-width="2.5" stroke-dasharray="3,3"/>
+    
+    <!-- Red Pointer Arrow to Install Linux item -->
+    <path d="M40 280 L96 200" fill="none" stroke="#f43f5e" stroke-width="3" stroke-linecap="round"/>
+    <polygon points="98,194 99,206 88,202" fill="#f43f5e"/>
+
+    <!-- Callout Box: Step 2 -->
+    <rect x="25" y="280" width="220" height="52" rx="10" fill="#f43f5e" stroke="#ffffff" stroke-width="1.5"/>
+    <text x="38" y="302" fill="#ffffff" font-family="-apple-system, sans-serif" font-size="12" font-weight="800">STEP 2: TAP 3-DOTS (⋮)</text>
+    <text x="38" y="320" fill="#ffe4e6" font-family="-apple-system, sans-serif" font-size="11" font-weight="600">Select "Install Linux Environment"</text>
+  </g>
+
+  <!-- Bottom Android Nav Bar -->
+  <rect x="16" y="666" width="348" height="38" fill="#090d16"/>
+  <rect x="100" y="682" width="14" height="14" rx="2" fill="none" stroke="#64748b" stroke-width="2"/>
+  <circle cx="190" cy="689" r="7" fill="none" stroke="#64748b" stroke-width="2"/>
+  <polygon points="275,689 285,682 285,696" fill="none" stroke="#64748b" stroke-width="2"/>
+</svg>
