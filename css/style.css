@@ -1008,24 +1008,501 @@ footer {
   align-items: center;
 }
 
-@media (max-width: 900px) {
-  .portal-grid, .visual-step-card, .visual-step-card.reverse, .visual-step-card.wide-media, .visual-step-card.wide-media.reverse, .compliance-banner {
+/* Mobile Subnav Bar */
+.mobile-subnav-wrapper {
+  display: none;
+  background: rgba(10, 15, 26, 0.95);
+  border-bottom: 1px solid var(--border-color);
+  position: sticky;
+  top: 70px;
+  z-index: 90;
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+}
+
+.mobile-subnav {
+  display: flex;
+  overflow-x: auto;
+  white-space: nowrap;
+  gap: 8px;
+  padding: 10px 16px;
+  scrollbar-width: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.mobile-subnav::-webkit-scrollbar {
+  display: none;
+}
+
+.subnav-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 14px;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  color: var(--text-muted);
+  text-decoration: none;
+  font-size: 0.82rem;
+  font-weight: 600;
+  transition: all 0.2s ease;
+  flex-shrink: 0;
+}
+
+.subnav-pill:active,
+.subnav-pill:hover {
+  background: rgba(99, 102, 241, 0.2);
+  border-color: rgba(99, 102, 241, 0.45);
+  color: #ffffff;
+}
+
+/* Download Buttons Group */
+.download-buttons-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+/* Responsive Breakpoints System */
+
+/* Tablets & Small Laptops (<= 1024px) */
+@media (max-width: 1024px) {
+  .portal-grid {
     grid-template-columns: 1fr;
+    gap: 30px;
   }
+
+  .qr-card {
+    max-width: 380px;
+    margin: 0 auto;
+  }
+
+  .visual-step-card,
+  .visual-step-card.reverse,
+  .visual-step-card.wide-media,
+  .visual-step-card.wide-media.reverse {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 30px 24px;
+  }
+
   .visual-step-card.reverse .step-img-col {
     order: 2;
   }
+
   .visual-step-card.reverse .step-info-col {
     order: 1;
   }
-  .dual-frames {
+
+  .compliance-banner {
     grid-template-columns: 1fr;
+    gap: 28px;
   }
+
+  .nav-links {
+    gap: 16px;
+  }
+
+  .nav-links a {
+    font-size: 0.86rem;
+  }
+}
+
+/* Tablets & Large Phones (<= 900px) */
+@media (max-width: 900px) {
   .nav-links {
     display: none;
   }
+
+  .mobile-subnav-wrapper {
+    display: block;
+  }
+
+  .hero-title {
+    font-size: clamp(2rem, 5vw, 2.6rem);
+  }
+
+  .dual-frames {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Standard Mobile Phones (<= 768px) */
+@media (max-width: 768px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  header {
+    top: 0;
+  }
+
+  .nav-inner {
+    height: 66px;
+  }
+
+  .mobile-subnav-wrapper {
+    top: 66px;
+  }
+
+  .brand-title {
+    font-size: 1.15rem;
+  }
+
+  .brand-logo-img {
+    width: 32px;
+    height: 32px;
+  }
+
+  .btn-nav-primary {
+    padding: 8px 14px;
+    font-size: 0.8rem;
+    gap: 6px;
+  }
+
+  .hero {
+    padding: 40px 0 24px;
+  }
+
+  .hero-app-icon {
+    width: 80px;
+    height: 80px;
+    border-radius: 18px;
+  }
+
+  .badge-pill {
+    font-size: 0.76rem;
+    padding: 6px 14px;
+    text-align: center;
+    line-height: 1.35;
+  }
+
+  .hero-title {
+    font-size: 1.9rem;
+    line-height: 1.25;
+    margin-bottom: 12px;
+  }
+
+  .hero-desc {
+    font-size: 0.94rem;
+    line-height: 1.6;
+    margin-bottom: 24px;
+  }
+
+  .hero-cta {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .hero-cta a {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .specs-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+    margin-top: 32px;
+  }
+
+  .spec-item {
+    padding: 12px 10px;
+    width: 100%;
+    min-width: 0;
+    gap: 10px;
+  }
+
+  .spec-icon {
+    width: 34px;
+    height: 34px;
+    font-size: 1.05rem;
+  }
+
+  .spec-title {
+    font-size: 0.82rem;
+  }
+
+  .spec-sub {
+    font-size: 0.7rem;
+  }
+
+  /* Download Portal Card */
+  .download-portal {
+    padding: 24px 16px;
+    margin: 40px 0;
+    border-radius: 20px;
+  }
+
+  .portal-title {
+    font-size: 1.7rem;
+  }
+
+  .portal-desc {
+    font-size: 0.92rem;
+    margin-bottom: 20px;
+  }
+
+  .meta-pills {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 8px;
+    margin-bottom: 22px;
+  }
+
+  .meta-pill {
+    font-size: 0.74rem;
+    padding: 8px 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 2px;
+  }
+
+  .download-buttons-group {
+    flex-direction: column;
+    width: 100%;
+    gap: 12px;
+  }
+
+  .download-buttons-group a {
+    width: 100%;
+    justify-content: center;
+    text-align: center;
+    padding: 14px 20px;
+    font-size: 1rem;
+  }
+
+  .code-cmd-box {
+    word-break: break-all;
+    overflow-wrap: anywhere;
+    white-space: normal;
+    font-size: 0.74rem;
+    padding: 10px 12px;
+    line-height: 1.45;
+  }
+
+  .qr-card {
+    padding: 18px;
+  }
+
+  .qr-box {
+    width: 150px;
+    height: 150px;
+  }
+
+  /* Section Headings */
+  .section-head {
+    margin: 50px 0 30px;
+  }
+
+  .section-title {
+    font-size: 1.7rem;
+    line-height: 1.25;
+  }
+
+  .section-desc {
+    font-size: 0.94rem;
+  }
+
+  /* Phase Divider */
+  .phase-divider {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    margin: 32px 0 14px;
+  }
+
+  .phase-pill {
+    font-size: 0.78rem;
+    padding: 6px 14px;
+    max-width: 100%;
+    white-space: normal;
+    line-height: 1.35;
+  }
+
+  .phase-line {
+    width: 100%;
+  }
+
+  /* Visual Step Cards */
+  .visual-step-card {
+    padding: 20px 14px;
+    border-radius: 20px;
+    gap: 20px;
+  }
+
+  .step-badge {
+    font-size: 0.74rem;
+    padding: 5px 10px;
+    margin-bottom: 12px;
+    white-space: normal;
+    line-height: 1.3;
+  }
+
+  .step-title {
+    font-size: 1.3rem;
+    line-height: 1.3;
+    margin-bottom: 10px;
+  }
+
+  .step-desc {
+    font-size: 0.9rem;
+    line-height: 1.55;
+    margin-bottom: 14px;
+  }
+
+  .action-checklist {
+    gap: 10px;
+    margin-bottom: 16px;
+  }
+
+  .action-checklist li {
+    font-size: 0.86rem;
+    line-height: 1.45;
+    gap: 10px;
+  }
+
+  .check-icon {
+    width: 20px;
+    height: 20px;
+    font-size: 0.78rem;
+  }
+
+  .dual-frames {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
   .mobile-frame {
-    max-height: 460px;
+    border-radius: 20px;
+    padding: 3px;
+    max-height: none;
+  }
+
+  .mobile-frame img {
+    border-radius: 16px;
+    max-height: 480px;
+    width: 100%;
+    object-fit: contain;
+  }
+
+  /* In-App Guide Grid */
+  .inapp-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+    margin-bottom: 50px;
+  }
+
+  .inapp-card {
+    padding: 16px;
+    border-radius: 20px;
+  }
+
+  .inapp-card-title {
+    font-size: 1.05rem;
+  }
+
+  .inapp-card-desc {
+    font-size: 0.85rem;
+  }
+
+  /* 15 Languages Grid */
+  .lang-grid {
+    grid-template-columns: 1fr;
+    gap: 14px;
+    margin-bottom: 50px;
+  }
+
+  .lang-card {
+    padding: 18px;
+    border-radius: 18px;
+  }
+
+  /* Compliance Banners */
+  .compliance-banner {
+    padding: 22px 16px;
+    border-radius: 20px;
+    gap: 22px;
+    margin: 36px 0;
+  }
+
+  .compliance-banner h3 {
+    font-size: 1.45rem !important;
+  }
+
+  .compliance-banner p {
+    font-size: 0.88rem !important;
+  }
+
+  /* Lightbox */
+  .lightbox-modal {
+    padding: 12px;
+  }
+
+  .lightbox-img {
+    max-width: 96vw;
+    max-height: 84vh;
+    border-radius: 12px;
+  }
+
+  .lightbox-close {
+    top: 14px;
+    right: 14px;
+    width: 36px;
+    height: 36px;
+    font-size: 1.8rem;
+  }
+
+  /* Footer */
+  footer {
+    padding: 40px 0 24px;
+  }
+
+  .footer-inner {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+    font-size: 0.78rem;
+  }
+}
+
+/* Extra Small Phones (<= 380px) */
+@media (max-width: 380px) {
+  .container {
+    padding: 0 12px;
+  }
+
+  .specs-row {
+    grid-template-columns: 1fr;
+  }
+
+  .meta-pills {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-title {
+    font-size: 1.65rem;
+  }
+
+  .portal-title {
+    font-size: 1.45rem;
+  }
+
+  .step-title {
+    font-size: 1.2rem;
+  }
+
+  .btn-big-download {
+    font-size: 0.92rem;
+    padding: 12px 16px;
   }
 }
 
