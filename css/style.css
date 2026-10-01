@@ -825,6 +825,191 @@ footer {
   z-index: 1;
 }
 
+/* Official Help & Support Box */
+.footer-support-box {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.75) 0%, rgba(15, 23, 42, 0.92) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.35);
+  border-radius: 24px;
+  padding: 36px 40px;
+  margin-bottom: 45px;
+  display: grid;
+  grid-template-columns: 1.35fr 1fr;
+  gap: 36px;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45), 0 0 30px rgba(99, 102, 241, 0.12);
+  backdrop-filter: blur(14px);
+}
+
+.footer-support-box::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  right: -60px;
+  width: 220px;
+  height: 220px;
+  background: radial-gradient(circle, rgba(99, 102, 241, 0.25) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.support-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: rgba(16, 185, 129, 0.15);
+  border: 1px solid rgba(16, 185, 129, 0.4);
+  color: #34d399;
+  font-size: 0.82rem;
+  font-weight: 700;
+  padding: 5px 14px;
+  border-radius: 20px;
+  margin-bottom: 14px;
+}
+
+.badge-dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #34d399;
+  box-shadow: 0 0 8px #34d399;
+  display: inline-block;
+  animation: pulseDotAnim 2s infinite ease-in-out;
+}
+
+@keyframes pulseDotAnim {
+  0%, 100% { transform: scale(1); opacity: 0.9; }
+  50% { transform: scale(1.3); opacity: 1; }
+}
+
+.support-title {
+  font-size: 1.55rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 12px;
+  line-height: 1.25;
+}
+
+.support-desc {
+  color: #cbd5e1;
+  font-size: 0.95rem;
+  line-height: 1.65;
+  margin-bottom: 18px;
+}
+
+.support-features {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.support-feature-item {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 0.84rem;
+  font-weight: 600;
+  color: #94a3b8;
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  padding: 5px 12px;
+  border-radius: 8px;
+}
+
+.support-action-card {
+  background: rgba(15, 23, 42, 0.88);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 18px;
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  box-shadow: 0 10px 28px rgba(0, 0, 0, 0.35);
+}
+
+.support-card-header {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+
+.support-avatar {
+  width: 46px;
+  height: 46px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, rgba(99, 102, 241, 0.25) 0%, rgba(56, 189, 248, 0.25) 100%);
+  border: 1px solid rgba(99, 102, 241, 0.45);
+  color: #38bdf8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.support-card-title {
+  font-weight: 800;
+  font-size: 0.98rem;
+  color: #ffffff;
+}
+
+.support-card-subtitle {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+.support-email-pill {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(0, 0, 0, 0.45);
+  border: 1px dashed rgba(56, 189, 248, 0.45);
+  padding: 10px 14px;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.support-email-pill .email-icon {
+  font-size: 1.1rem;
+}
+
+.support-email-pill .email-link {
+  font-family: var(--font-mono);
+  font-size: 0.92rem;
+  font-weight: 700;
+  color: #38bdf8;
+  text-decoration: none;
+  word-break: break-all;
+  transition: color 0.2s ease;
+}
+
+.support-email-pill .email-link:hover {
+  color: #7dd3fc;
+  text-decoration: underline;
+}
+
+.btn-email-contact {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: linear-gradient(135deg, #6366f1 0%, #4f46e5 100%);
+  color: #ffffff;
+  padding: 13px 20px;
+  border-radius: 12px;
+  font-size: 0.94rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: all 0.25s ease;
+  box-shadow: 0 4px 16px rgba(99, 102, 241, 0.35);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.btn-email-contact:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(99, 102, 241, 0.5);
+  background: linear-gradient(135deg, #4f46e5 0%, #4338ca 100%);
+}
+
 .footer-inner {
   display: flex;
   flex-wrap: wrap;
@@ -846,6 +1031,23 @@ footer {
   border-radius: 10px;
 }
 
+.footer-links-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.footer-links-wrap a {
+  color: #94a3b8;
+  text-decoration: none;
+  font-size: 0.9rem;
+  transition: color 0.2s ease;
+}
+
+.footer-links-wrap a:hover {
+  color: #38bdf8;
+}
+
 .footer-bottom {
   border-top: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 24px;
@@ -856,6 +1058,16 @@ footer {
   gap: 16px;
   font-size: 0.85rem;
   color: var(--text-dim);
+}
+
+.footer-support-link {
+  color: #38bdf8;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.footer-support-link:hover {
+  text-decoration: underline;
 }
 
 /* Dual Screenshot Frames */
@@ -1125,6 +1337,12 @@ footer {
 
   .dual-frames {
     grid-template-columns: 1fr 1fr;
+  }
+
+  .footer-support-box {
+    grid-template-columns: 1fr;
+    gap: 28px;
+    padding: 30px 24px;
   }
 }
 
@@ -1460,10 +1678,58 @@ footer {
     padding: 40px 0 24px;
   }
 
+  .footer-support-box {
+    padding: 24px 18px;
+    border-radius: 20px;
+    margin-bottom: 32px;
+  }
+
+  .support-title {
+    font-size: 1.3rem;
+  }
+
+  .support-desc {
+    font-size: 0.88rem;
+    line-height: 1.6;
+  }
+
+  .support-features {
+    gap: 8px;
+  }
+
+  .support-feature-item {
+    font-size: 0.78rem;
+    padding: 4px 10px;
+  }
+
+  .support-action-card {
+    padding: 18px;
+    border-radius: 16px;
+  }
+
+  .support-email-pill {
+    padding: 8px 12px;
+  }
+
+  .support-email-pill .email-link {
+    font-size: 0.86rem;
+  }
+
+  .btn-email-contact {
+    width: 100%;
+    padding: 12px 16px;
+    font-size: 0.9rem;
+  }
+
   .footer-inner {
     flex-direction: column;
     align-items: flex-start;
     gap: 20px;
+  }
+
+  .footer-links-wrap {
+    flex-direction: column;
+    gap: 12px;
   }
 
   .footer-bottom {
@@ -1503,6 +1769,18 @@ footer {
   .btn-big-download {
     font-size: 0.92rem;
     padding: 12px 16px;
+  }
+
+  .support-title {
+    font-size: 1.15rem;
+  }
+
+  .footer-support-box {
+    padding: 18px 12px;
+  }
+
+  .support-email-pill .email-link {
+    font-size: 0.78rem;
   }
 }
 
