@@ -1,32 +1,119 @@
-# Code Editor (TermCode IDE) - Official Website & Portal
+# CodeEditor IDE - Official Web Portal & Download Hub 🌐
+### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
-Official website and download portal for **Code Editor (TermCode IDE)** for Android.
+[![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.3.0_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.0.apk)
+[![Android App Repo](https://img.shields.io/badge/Android_App-code--eidter--app-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/raj40870-pixel/code-eidter-app)
+[![Compiler CDN](https://img.shields.io/badge/Compiler_Library-v1.3.0_CDN-purple?style=for-the-badge&logo=gnubash&logoColor=white)](https://github.com/raj40870-pixel/library)
+[![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
-## Features
-- **Visual Step-by-Step Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, native terminal compiler, and in-app live web preview.
-- **Direct 1-Click APK Download**: High-speed direct APK download and cloud mirror.
-- **Interactive Lightbox Modal**: Tap any screenshot to zoom in full resolution.
-- **15+ Languages Showcase**: C, C++, Rust, Python, Java, Go, Kotlin, Node.js Full-Stack, HTML/CSS Web, TypeScript, C#, PHP, Ruby, Lua.
-- **Vercel-Ready**: Pre-configured with `vercel.json` for instant deployment.
+---
 
-## Deploying to Vercel
-1. Create a new GitHub repository (e.g. `code-editor-website`).
-2. Push this folder to GitHub:
+## 🌐 Ecosystem Quick Links
+
+- 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
+- ⬇️ **Direct APK Download (v1.3.0)**: [Download CodeEditor-v1.3.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.0.apk) *(3.23 MB, Clean Signed Build)*
+- 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
+- 📦 **GitHub Releases Portal**: [CodeEditor IDE Releases](https://github.com/raj40870-pixel/code-eidter-app/releases)
+- 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
+
+---
+
+## 🌟 Overview
+
+This repository hosts the source code, assets, and deployment configuration for the **CodeEditor IDE (TermCode)** official web portal, deployed live at [**https://code-eidter-apk-website.vercel.app/**](https://code-eidter-apk-website.vercel.app/).
+
+The portal serves as the primary distribution hub for the mobile IDE app, providing fast direct APK downloads, comprehensive visual walkthroughs, compiler toolchain setup guides, and the backend **OTA update verification API (`version.json`)** consumed by the Android app.
+
+---
+
+## ✨ Portal Features
+
+- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of verified, signed APKs (`CodeEditor-v1.3.0.apk`) with SHA-256 integrity hashes and cloud mirror fallbacks.
+- **📱 Interactive Visual Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, embedded Linux terminal compilation, and live web previews with high-resolution lightbox modal zoom.
+- **🔄 Live In-App Update Engine (`version.json`)**: Hosts the real-time version check API that powers CodeEditor IDE's in-app auto-update system.
+- **🛠️ 15+ Compilers & Language Showcase**: Starter templates and guides for C, C++, Python, Java, Node.js Full-Stack, HTML/CSS Web, TypeScript, Go, Rust, Kotlin, C# Mono, PHP, Ruby, and Lua.
+- **🎨 Modern Developer-Focused UI**: Built with pure semantic HTML5, CSS3, and vanilla JavaScript—zero heavy frameworks, lightning-fast first contentful paint (FCP), and full mobile responsiveness.
+- **☁️ Continuous Vercel Deployment**: Configured with `vercel.json` for instantaneous atomic deployments upon Git push.
+
+---
+
+## 🔄 In-App Auto-Update API (`version.json`)
+
+The Android application (`AppUpdateManager.java`) polls the website's `version.json` endpoint to determine if a newer version of the IDE is available.
+
+**Live Endpoint**: [https://code-eidter-apk-website.vercel.app/version.json](https://code-eidter-apk-website.vercel.app/version.json)
+
+```json
+{
+  "versionCode": 4,
+  "versionName": "1.3.0",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.0.apk",
+  "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
+  "releaseNotes": "v1.3.0 Update: Automatic binary routing to dedicated cache directory, completely clean project explorer without .out/.class clutter, 24-hour auto-expiration policy for all compiled binaries, smooth horizontal scrolling with pinned line numbers, and direct in-app updates.",
+  "publishedAt": "2026-10-02"
+}
+```
+
+### Update Flow:
+1. When the user taps **Check for Updates** in the IDE's menu, the app fetches `version.json`.
+2. If `remote.versionCode > local.versionCode`, an update dialog displays the release notes.
+3. Tapping **Update Now** downloads `apkUrl` with a live **0%–100% progress dialog** and prompts immediate installation.
+
+---
+
+## 🚀 How to Publish a New APK Release
+
+When a new version of CodeEditor IDE is built:
+
+1. **Place the New APK**:
+   Copy the newly generated release APK into the `apk/` directory:
    ```bash
-   git remote add origin https://github.com/YOUR_USERNAME/code-editor-website.git
-   git branch -M main
-   git push -u origin main
+   cp app/build/outputs/apk/release/app-release.apk apk/CodeEditor-v1.x.x.apk
    ```
-3. Go to [vercel.com](https://vercel.com) -> **Add New Project** -> Import your GitHub repository.
-4. Framework Preset: **Other** (Static HTML). Click **Deploy**!
 
-## Updating the APK
-When a new APK is built:
-1. Replace `apk/CodeEditor-v1.3.0.apk` with the newly built APK.
-2. Commit and push:
+2. **Update `version.json`**:
+   Update `versionCode`, `versionName`, `apkUrl`, and `releaseNotes` in `version.json`.
+
+3. **Update Download Links in `index.html`**:
+   Update the version badges and download button href attributes in `index.html`.
+
+4. **Commit & Push**:
    ```bash
-   git add apk/CodeEditor-v1.3.0.apk
-   git commit -m "chore: update APK release build"
-   git push
+   git add apk/ version.json index.html README.md
+   git commit -m "chore: release CodeEditor IDE v1.x.x"
+   git push origin main
    ```
-Vercel will auto-deploy the update within seconds!
+   *Vercel automatically detects the commit and deploys the new release within seconds!*
+
+---
+
+## 📂 Repository Structure
+
+```text
+code-editor-website/
+├── apk/
+│   └── CodeEditor-v1.3.0.apk    # Current official signed release APK (3.23 MB)
+├── assets/
+│   └── images/                 # App logos, banners, and screenshots
+│       ├── logo.png
+│       ├── logo-banner.jpg
+│       ├── termcode-1-clean.jpg
+│       ├── termcode-2-clean.jpg
+│       └── ...
+├── css/
+│   └── style.css               # Modern dark-mode IDE aesthetic stylesheet
+├── js/
+│   └── main.js                 # Smooth scroll, lightbox modal & interactive logic
+├── index.html                  # Main web portal and download landing page
+├── version.json                # In-app OTA update verification manifest
+├── vercel.json                 # Vercel caching, headers & routing configuration
+└── README.md                   # Web portal documentation
+```
+
+---
+
+## 📄 License
+
+This website portal and documentation are licensed under the [MIT License](LICENSE).
+CodeEditor IDE is free and open-source software built for developers worldwide! 💻📱
