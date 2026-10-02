@@ -1,8 +1,8 @@
 {
-  "versionCode": 1,
-  "versionName": "1.0.0",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.0.0.apk",
+  "versionCode": 2,
+  "versionName": "1.1.0",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.1.0.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "Official Public Release v1.0.0: 15+ offline compilers, embedded Linux environment, mobile quick coding toolbar, interactive terminal, and live HTML web preview.",
-  "publishedAt": "2026-10-01"
+  "releaseNotes": "v1.1.0 Update: Pinch-to-zoom editor scaling, font family selector (7 fonts), clean workspace restart with confirmation dialog, and performance optimizations.",
+  "publishedAt": "2026-10-02"
 }
