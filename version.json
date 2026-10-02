@@ -1,8 +1,8 @@
 {
-  "versionCode": 3,
-  "versionName": "1.2.0",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.2.0.apk",
+  "versionCode": 4,
+  "versionName": "1.3.0",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.0.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "v1.2.0 Update: Smooth horizontal code scrolling with pinned line numbers, in-app direct background updates with native installer integration, pinch-to-zoom editor scaling, font family selector, and workspace restart.",
+  "releaseNotes": "v1.3.0 Update: Automatic binary routing to dedicated cache directory, completely clean project explorer without .out/.class clutter, 24-hour auto-expiration policy for all compiled binaries, smooth horizontal scrolling with pinned line numbers, and direct in-app updates.",
   "publishedAt": "2026-10-02"
 }

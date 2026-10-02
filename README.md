@@ -22,10 +22,10 @@ Official website and download portal for **Code Editor (TermCode IDE)** for Andr
 
 ## Updating the APK
 When a new APK is built:
-1. Replace `apk/CodeEditor-v1.2.0.apk` with the newly built APK.
+1. Replace `apk/CodeEditor-v1.3.0.apk` with the newly built APK.
 2. Commit and push:
    ```bash
-   git add apk/CodeEditor-v1.2.0.apk
+   git add apk/CodeEditor-v1.3.0.apk
    git commit -m "chore: update APK release build"
    git push
    ```
