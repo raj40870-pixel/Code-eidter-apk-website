@@ -1,8 +1,8 @@
 {
-  "versionCode": 2,
-  "versionName": "1.1.0",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.1.0.apk",
+  "versionCode": 3,
+  "versionName": "1.2.0",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.2.0.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "v1.1.0 Update: Pinch-to-zoom editor scaling, font family selector (7 fonts), clean workspace restart with confirmation dialog, and performance optimizations.",
+  "releaseNotes": "v1.2.0 Update: Smooth horizontal code scrolling with pinned line numbers, in-app direct background updates with native installer integration, pinch-to-zoom editor scaling, font family selector, and workspace restart.",
   "publishedAt": "2026-10-02"
 }
