@@ -14,7 +14,6 @@
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
 - ⬇️ **Direct APK Download (v1.3.2)**: [Download CodeEditor-v1.3.2.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.2.apk) *(3.23 MB, Clean Signed Build)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
-- 📦 **GitHub Releases Portal**: [CodeEditor IDE Releases](https://github.com/raj40870-pixel/code-eidter-app/releases)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
 ---
