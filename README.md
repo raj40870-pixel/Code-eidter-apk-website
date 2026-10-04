@@ -45,7 +45,7 @@ The Android application (`AppUpdateManager.java`) polls the website's `version.j
 
 ```json
 {
-  "versionCode": 8,
+  "versionCode": 9,
   "versionName": "1.3.4",
   "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.4.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
