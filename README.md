@@ -92,7 +92,8 @@ When a new version of CodeEditor IDE is built:
 ```text
 code-editor-website/
 ├── apk/
-│   └── CodeEditor-v1.3.1.apk    # Current official signed release APK (3.23 MB)
+│   ├── CodeEditor-v1.3.4.apk    # Current official signed release APK (3.23 MB)
+│   └── CodeEditor-latest.apk   # Latest auto-sync release APK (3.23 MB)
 ├── assets/
 │   └── images/                 # App logos, banners, and screenshots
 │       ├── logo.png
