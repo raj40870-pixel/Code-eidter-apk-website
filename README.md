@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.3.5_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.5.apk)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.3.6_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.6.apk)
 [![Android App Repo](https://img.shields.io/badge/Android_App-code--eidter--app-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/raj40870-pixel/code-eidter-app)
 [![Compiler CDN](https://img.shields.io/badge/Compiler_Library-Official_CDN-purple?style=for-the-badge&logo=gnubash&logoColor=white)](https://github.com/raj40870-pixel/library)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Direct APK Download (v1.3.5)**: [Download CodeEditor-v1.3.5.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.5.apk) *(3.38 MB, Clean Signed Build)*
+- ⬇️ **Direct APK Download (v1.3.6)**: [Download CodeEditor-v1.3.6.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.6.apk) *(3.38 MB, Clean Signed Build)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,7 +28,7 @@ The portal serves as the primary distribution hub for the mobile IDE app, provid
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of verified, signed APKs (`CodeEditor-v1.3.5.apk`) with SHA-256 integrity hashes and cloud mirror fallbacks.
+- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of verified, signed APKs (`CodeEditor-v1.3.6.apk`) with SHA-256 integrity hashes and cloud mirror fallbacks.
 - **📱 Interactive Visual Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, embedded Linux terminal compilation, and live web previews with high-resolution lightbox modal zoom.
 - **🔄 Live In-App Update Engine (`version.json`)**: Hosts the real-time version check API that powers CodeEditor IDE's in-app auto-update system.
 - **🛠️ 15+ Compilers & Language Showcase**: Starter templates and guides for C, C++, Python, Java, Node.js Full-Stack, HTML/CSS Web, TypeScript, Go, Rust, Kotlin, C# Mono, PHP, Ruby, and Lua.
