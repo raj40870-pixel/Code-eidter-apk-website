@@ -1,8 +1,8 @@
 {
-    "versionCode":  16,
-    "versionName":  "1.3.9",
-    "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk",
+    "versionCode":  17,
+    "versionName":  "1.3.10",
+    "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.10.apk",
     "websiteUrl":  "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes":  "v1.3.9: Unique Android application ID com.rajkumar.codereditor to resolve package identity duplication, plus target SDK 36 for current Play Store submission requirements.",
+    "releaseNotes":  "v1.3.10: Improves the compact phone toolbar so the app title and actions fit narrow screens; retains unique application ID com.rajkumar.codereditor and target SDK 36.",
     "publishedAt":  "2026-10-11"
 }
