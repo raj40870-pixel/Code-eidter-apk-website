@@ -1,8 +1,8 @@
 {
-    "versionCode":  19,
+    "versionCode":  20,
     "versionName":  "1.4.0",
     "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
     "websiteUrl":  "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes":  "v1.4.0 UI update (versionCode 19): Keeps toolbar controls clear of Android 15+ status-bar icons and the coding accessory row above navigation controls. Includes the Linux bootstrap symlink repair.",
+    "releaseNotes":  "v1.4.0 update (versionCode 20): Fixes PRoot temporary-directory creation with an app-private writable directory and correct Linux /tmp binding; also includes Android 15+ UI insets and the Linux bootstrap symlink repair.",
     "publishedAt":  "2026-10-11"
 }
