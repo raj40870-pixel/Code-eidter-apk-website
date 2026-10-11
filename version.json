@@ -1,8 +1,8 @@
 {
-    "versionCode":  21,
-    "versionName":  "1.3.9",
-    "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk",
+    "versionCode":  15,
+    "versionName":  "1.3.8",
+    "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.8.apk",
     "websiteUrl":  "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes":  "CodeEditor IDE v1.3.9 restored build (versionCode 21): Original v1.3.9 app source with target SDK 37. This APK replaces the previously published v1.3.9 download.",
-    "publishedAt":  "2026-10-11"
+    "releaseNotes":  "CodeEditor IDE v1.3.8 signed legacy APK (versionCode 15, target SDK 34, package com.termux). This older package may not update builds installed under a different package ID.",
+    "publishedAt":  "2026-10-12"
 }
