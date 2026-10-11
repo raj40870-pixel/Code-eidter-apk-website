@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.3.10_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.10.apk)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.0_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk)
 [![Android App Repo](https://img.shields.io/badge/Android_App-code--eidter--app-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/raj40870-pixel/code-eidter-app)
 [![Compiler CDN](https://img.shields.io/badge/Compiler_Library-Official_CDN-purple?style=for-the-badge&logo=gnubash&logoColor=white)](https://github.com/raj40870-pixel/library)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Direct APK Download (v1.3.10)**: [Download CodeEditor-v1.3.10.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.10.apk) *(3.42 MB, Target SDK 36, versionCode 17, Clean Signed Build)*
+- ⬇️ **Direct APK Download (v1.4.0)**: [Download CodeEditor-v1.4.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk) *(3.42 MB, Target SDK 36, versionCode 18, Clean Signed Build)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,7 +28,8 @@ The portal serves as the primary distribution hub for the mobile IDE app, provid
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of the signed v1.3.10 APK (`CodeEditor-v1.3.10.apk`, 3.42 MB (3,588,576 bytes), target SDK 36, versionCode 17; SHA-256 `c5f8a6794de5eec7f40214bdf75ad6b24f1be54a87aa04fec8e848cc8c1bfc3e`) with cloud mirror fallbacks.
+- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of the signed v1.4.0 APK (`CodeEditor-v1.4.0.apk`, 3.42 MB (3,588,976 bytes), target SDK 36, versionCode 18; SHA-256 `036d8dc24fd770f3ba99bbf29f8f3e901f692feb9afd286896c3f9c612f6f6e5`) with cloud mirror fallbacks.
+- **🐧 Custom-package Linux bootstrap fix**: Rewrites Termux bootstrap symlink targets to the app's private Linux prefix so terminal commands work with `com.rajkumar.codereditor`.
 - **📱 Interactive Visual Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, embedded Linux terminal compilation, and live web previews with high-resolution lightbox modal zoom.
 - **🔄 Live In-App Update Engine (`version.json`)**: Hosts the real-time version check API that powers CodeEditor IDE's in-app auto-update system.
 - **🛠️ 15+ Compilers & Language Showcase**: Starter templates and guides for C, C++, Python, Java, Node.js Full-Stack, HTML/CSS Web, TypeScript, Go, Rust, Kotlin, C# Mono, PHP, Ruby, and Lua.
@@ -45,11 +46,11 @@ The Android application (`AppUpdateManager.java`) polls the website's `version.j
 
 ```json
 {
-  "versionCode": 17,
-  "versionName": "1.3.10",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.10.apk",
+  "versionCode": 18,
+  "versionName": "1.4.0",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "v1.3.10: Unique application ID com.rajkumar.codereditor to resolve package identity duplication, plus target SDK 36 for current Play Store submission requirements.",
+  "releaseNotes": "v1.4.0: Repairs Termux bootstrap symlink paths for the custom package, preserves the compact phone toolbar, and targets SDK 36.",
   "publishedAt": "2026-10-11"
 }
 ```
@@ -92,7 +93,7 @@ When a new version of CodeEditor IDE is built:
 ```text
 code-editor-website/
 ├── apk/
-│   ├── CodeEditor-v1.3.10.apk    # Current official signed release APK (3.42 MB)
+│   ├── CodeEditor-v1.4.0.apk    # Current official signed release APK (3.42 MB)
 │   └── CodeEditor-latest.apk   # Latest auto-sync release APK (3.42 MB)
 ├── assets/
 │   └── images/                 # App logos, banners, and screenshots
