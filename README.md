@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Direct APK Download (v1.4.0)**: [Download CodeEditor-v1.4.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk) *(3.42 MB, Target SDK 36, versionCode 18, Clean Signed Build)*
+- ⬇️ **Direct APK Download (v1.4.0)**: [Download CodeEditor-v1.4.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk) *(3.42 MB, Target SDK 36, versionCode 19, Clean Signed Build)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,8 +28,9 @@ The portal serves as the primary distribution hub for the mobile IDE app, provid
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of the signed v1.4.0 APK (`CodeEditor-v1.4.0.apk`, 3.42 MB (3,588,976 bytes), target SDK 36, versionCode 18; SHA-256 `036d8dc24fd770f3ba99bbf29f8f3e901f692feb9afd286896c3f9c612f6f6e5`) with cloud mirror fallbacks.
+- **⚡ Direct 1-Click APK Download**: High-speed CDN direct download of the signed v1.4.0 APK (`CodeEditor-v1.4.0.apk`, 3.42 MB (3,589,472 bytes), target SDK 36, versionCode 19; SHA-256 `647b7882307974f0f3d04757713e4a6dcc86d33c640c692df06b362e24a05383b`) with cloud mirror fallbacks.
 - **🐧 Custom-package Linux bootstrap fix**: Rewrites Termux bootstrap symlink targets to the app's private Linux prefix so terminal commands work with `com.rajkumar.codereditor`.
+- **📱 Android 15+ system-bar layout fix**: Insets keep toolbar actions clear of status icons and move the coding accessory bar above navigation controls.
 - **📱 Interactive Visual Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, embedded Linux terminal compilation, and live web previews with high-resolution lightbox modal zoom.
 - **🔄 Live In-App Update Engine (`version.json`)**: Hosts the real-time version check API that powers CodeEditor IDE's in-app auto-update system.
 - **🛠️ 15+ Compilers & Language Showcase**: Starter templates and guides for C, C++, Python, Java, Node.js Full-Stack, HTML/CSS Web, TypeScript, Go, Rust, Kotlin, C# Mono, PHP, Ruby, and Lua.
@@ -46,11 +47,11 @@ The Android application (`AppUpdateManager.java`) polls the website's `version.j
 
 ```json
 {
-  "versionCode": 18,
+  "versionCode": 19,
   "versionName": "1.4.0",
   "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "v1.4.0: Repairs Termux bootstrap symlink paths for the custom package, preserves the compact phone toolbar, and targets SDK 36.",
+  "releaseNotes": "v1.4.0 UI update (versionCode 19): Keeps toolbar controls clear of Android 15+ status-bar icons and the coding accessory row above navigation controls. Includes the Linux bootstrap symlink repair.",
   "publishedAt": "2026-10-11"
 }
 ```

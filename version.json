@@ -1,8 +1,8 @@
 {
-    "versionCode":  18,
+    "versionCode":  19,
     "versionName":  "1.4.0",
     "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
     "websiteUrl":  "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes":  "v1.4.0: Repairs Termux bootstrap symlink paths for the custom package, preserves the compact phone toolbar, and targets SDK 36.",
+    "releaseNotes":  "v1.4.0 UI update (versionCode 19): Keeps toolbar controls clear of Android 15+ status-bar icons and the coding accessory row above navigation controls. Includes the Linux bootstrap symlink repair.",
     "publishedAt":  "2026-10-11"
 }
