@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Latest Direct APK Download (v1.3.9)**: [Download CodeEditor-v1.3.9.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk) *(Target SDK 37, versionCode 23, signed package `com.rajkumar.codereditor`)*
+- ⬇️ **Latest Direct APK Download (v1.3.9)**: [Download CodeEditor-v1.3.9.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk) *(Target SDK 37, versionCode 24, signed package `com.rajkumar.codereditor`)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,10 +28,10 @@ The portal serves APK downloads, visual walkthroughs, and compiler setup guides.
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: Download the signed v1.3.9 APK (`CodeEditor-v1.3.9.apk`, target SDK 37, versionCode 23, package `com.rajkumar.codereditor`).
+- **⚡ Direct 1-Click APK Download**: Download the signed v1.3.9 APK (`CodeEditor-v1.3.9.apk`, target SDK 37, versionCode 24, package `com.rajkumar.codereditor`).
 - **📦 Manual version check**: The app reads `version.json` only on request, reports the latest and installed versions, and never installs an update.
 - **📱 Interactive Visual Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, embedded Linux terminal compilation, and live web previews with high-resolution lightbox modal zoom.
-- **📄 APK Metadata (`version.json`)**: Records the current download details; the current app uses manual GitHub release verification instead of automatic website updates.
+- **📄 APK Metadata (`version.json`)**: Records the current download details; the app checks this website only when the user requests a manual version check.
 - **🛠️ 15+ Compilers & Language Showcase**: Starter templates and guides for C, C++, Python, Java, Node.js Full-Stack, HTML/CSS Web, TypeScript, Go, Rust, Kotlin, C# Mono, PHP, Ruby, and Lua.
 - **🎨 Modern Developer-Focused UI**: Built with pure semantic HTML5, CSS3, and vanilla JavaScript—zero heavy frameworks, lightning-fast first contentful paint (FCP), and full mobile responsiveness.
 - **☁️ Continuous Vercel Deployment**: Configured with `vercel.json` for instantaneous atomic deployments upon Git push.
@@ -46,11 +46,11 @@ This file records the current direct-download APK details. The Android app reque
 
 ```json
 {
-  "versionCode": 23,
+  "versionCode": 24,
   "versionName": "1.3.9",
   "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.3.9 (versionCode 23, target SDK 37, package com.rajkumar.codereditor): improves compiler library install verification and adds a manual website latest-version check. No automatic update or install.",
+  "releaseNotes": "CodeEditor IDE v1.3.9 (versionCode 24, target SDK 37, package com.rajkumar.codereditor): restored stable v1.3.8-based source, removes the GitHub menu shortcut while keeping the official website shortcut, and checks versions manually only. No automatic update or install.",
   "publishedAt": "2026-10-13"
 }
 ```
@@ -90,7 +90,7 @@ When a new version of CodeEditor IDE is built:
 ```text
 code-editor-website/
 ├── apk/
-│   ├── CodeEditor-v1.3.9.apk    # Current signed release (target SDK 37, versionCode 23)
+│   ├── CodeEditor-v1.3.9.apk    # Current signed release (target SDK 37, versionCode 24)
 │   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.3.9.apk
 ├── assets/
 │   └── images/                 # App logos, banners, and screenshots
