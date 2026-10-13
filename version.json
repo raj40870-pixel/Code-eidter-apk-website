@@ -1,8 +1,8 @@
 {
-    "versionCode": 26,
-    "versionName": "1.3.9",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk",
+    "versionCode": 27,
+    "versionName": "1.4.0",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.3.9 (versionCode 26, target SDK 37, package com.rajkumar.codereditor): restored stable v1.3.8 source base, manual website update flow, removed GitHub options from UI, and verified toolchain packages.",
+    "releaseNotes": "CodeEditor IDE v1.4.0 (versionCode 27, target SDK 37, package com.rajkumar.codereditor): Full edge-to-edge WindowInsets layout fix resolving status bar and navigation bar overlap on modern Android 15/16 devices, refined toolbar sizing, and verified offline compilers.",
     "publishedAt": "2026-10-14"
 }
