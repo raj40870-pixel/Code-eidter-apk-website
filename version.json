@@ -1,8 +1,8 @@
 {
-    "versionCode":  24,
-    "versionName":  "1.3.9",
-    "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.9.apk",
+    "versionCode":  25,
+    "versionName":  "1.3.10",
+    "apkUrl":  "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.3.10.apk",
     "websiteUrl":  "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes":  "CodeEditor IDE v1.3.9 (versionCode 24, target SDK 37, package com.rajkumar.codereditor): restored stable v1.3.8-based source, removes the GitHub menu shortcut while keeping the official website shortcut, and checks versions manually only. No automatic update or install.",
+    "releaseNotes":  "CodeEditor IDE v1.3.10 (versionCode 25, target SDK 37, package com.rajkumar.codereditor): restored stable v1.3.8-based source, removes the GitHub menu shortcut while keeping the official website shortcut, and checks versions manually only. No automatic update or install.",
     "publishedAt":  "2026-10-13"
 }
