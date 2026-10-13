@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Latest Direct APK Download (v1.4.0)**: [Download CodeEditor-v1.4.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk) *(Target SDK 37, versionCode 27, signed package `com.rajkumar.codereditor`)*
+- ⬇️ **Latest Direct APK Download (v1.4.0)**: [Download CodeEditor-v1.4.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk) *(Target SDK 34 Compatibility Mode, versionCode 27, signed package `com.rajkumar.codereditor`)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -22,16 +22,18 @@
 
 This repository hosts the source code, assets, and deployment configuration for the **CodeEditor IDE (TermCode)** official web portal, deployed live at [**https://code-eidter-apk-website.vercel.app/**](https://code-eidter-apk-website.vercel.app/).
 
-The portal serves APK downloads, visual walkthroughs, and compiler setup guides. The app checks `version.json` only when the user selects **Check Latest Version**; it never downloads or installs an update automatically.
+The portal serves APK downloads, visual walkthroughs, and compiler setup guides. The Android app checks `version.json` and supports direct in-app downloading and updating.
 
 ---
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.0 APK (`CodeEditor-v1.4.0.apk`, target SDK 37, versionCode 27, package `com.rajkumar.codereditor`).
-- **📦 Edge-to-Edge System WindowInsets Fix**: Seamless status bar and navigation bar insets preventing overlaps on modern Android 15/16 devices.
+- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.0 APK (`CodeEditor-v1.4.0.apk`, Target SDK 34 Compatibility Mode, versionCode 27, package `com.rajkumar.codereditor`).
+- **⚡ Seamless Linux Compilers & PRoot**: Configured `targetSdk = 34` with `compileSdk = 36` to activate Android OS Linker Compatibility Mode, fully resolving Bionic linker errors for PRoot, C++, and Python offline compilers.
+- **🔄 Direct In-App Automatic Updates**: One-tap in-app download and update installer directly fetching from this portal.
+- **📦 Edge-to-Edge System WindowInsets Fix**: Seamless status bar and navigation bar insets preventing overlaps on modern Android devices.
 - **📱 Interactive Visual Setup Guide**: Real app screenshots illustrating project explorer, multi-tab editing, smart coding keyboard, embedded Linux terminal compilation, and live web previews with high-resolution lightbox modal zoom.
-- **📄 APK Metadata (`version.json`)**: Records the current download details; the app checks this website only when the user requests a manual version check.
+- **📄 APK Metadata (`version.json`)**: Live endpoint for in-app version verification and direct downloads.
 - **🛠️ 15+ Compilers & Language Showcase**: Starter templates and guides for C, C++, Python, Java, Node.js Full-Stack, HTML/CSS Web, TypeScript, Go, Rust, Kotlin, C# Mono, PHP, Ruby, and Lua.
 - **🎨 Modern Developer-Focused UI**: Built with pure semantic HTML5, CSS3, and vanilla JavaScript—zero heavy frameworks, lightning-fast first contentful paint (FCP), and full mobile responsiveness.
 - **☁️ Continuous Vercel Deployment**: Configured with `vercel.json` for instantaneous atomic deployments upon Git push.
@@ -40,7 +42,7 @@ The portal serves APK downloads, visual walkthroughs, and compiler setup guides.
 
 ## 📄 Published APK Metadata (`version.json`)
 
-This file records the current direct-download APK details. The Android app requests this endpoint only when the user manually checks for the latest version.
+This file records the current direct-download APK details:
 
 **Live Endpoint**: [https://code-eidter-apk-website.vercel.app/version.json](https://code-eidter-apk-website.vercel.app/version.json)
 
@@ -50,12 +52,10 @@ This file records the current direct-download APK details. The Android app reque
   "versionName": "1.4.0",
   "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.4.0 (versionCode 27, target SDK 37, package com.rajkumar.codereditor): Full edge-to-edge WindowInsets layout fix resolving status bar and navigation bar overlap on modern Android 15/16 devices, refined toolbar sizing, and verified offline compilers.",
+  "releaseNotes": "CodeEditor IDE v1.4.0 (versionCode 27, target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Full edge-to-edge WindowInsets layout fix, direct in-app auto updates from website, and target SDK 34 compatibility mode for smooth Linux compilers and PRoot.",
   "publishedAt": "2026-10-14"
 }
 ```
-
-The manual version check displays the website version and installed version; it does not download or install APKs.
 
 ---
 
