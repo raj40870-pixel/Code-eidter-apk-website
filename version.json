@@ -1,8 +1,8 @@
 {
-    "versionCode": 28,
-    "versionName": "1.4.1",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.1.apk",
+    "versionCode": 29,
+    "versionName": "1.4.2",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.2.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.1 (versionCode 28, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Clean PRoot sysroot eliminating /linkerconfig permission warnings, dynamic linker self-healing engine for libz.so.1 and libLLVM, Python quoted path handling, Rust real-time streaming, and 100% stable execution across all 14+ languages.",
+    "releaseNotes": "CodeEditor IDE v1.4.2 (versionCode 29, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Physical shared library materialization engine resolving linker namespace failures (libz.so.1 / libLLVM / libzstd), multi-path fallback recovery, and zero-symlink cross-language execution across all 14+ stacks.",
     "publishedAt": "2026-10-14"
 }
