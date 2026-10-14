@@ -52,7 +52,7 @@ This file records the current direct-download APK details:
   "versionName": "1.4.1",
   "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.1.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.4.1 (versionCode 28, target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Enhanced multi-language execution pipeline across all 14+ languages, Python quoted path handling, Rust real-time stdbuf unbuffering, and rock-solid Target SDK 34 compatibility mode.",
+  "releaseNotes": "CodeEditor IDE v1.4.1 (versionCode 28, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Clean PRoot sysroot eliminating /linkerconfig permission warnings, dynamic linker self-healing engine for libz.so.1 and libLLVM, Python quoted path handling, Rust real-time streaming, and 100% stable execution across all 14+ languages.",
   "publishedAt": "2026-10-14"
 }
 ```
