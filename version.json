@@ -1,8 +1,8 @@
 {
-    "versionCode": 27,
-    "versionName": "1.4.0",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
+    "versionCode": 28,
+    "versionName": "1.4.1",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.1.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.0 (versionCode 27, target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Full edge-to-edge WindowInsets layout fix, direct in-app auto updates from website, and target SDK 34 compatibility mode with fixed libc++ headers and PRoot compiler sysroot for C++ and Java.",
+    "releaseNotes": "CodeEditor IDE v1.4.1 (versionCode 28, target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Enhanced multi-language execution pipeline across all 14+ languages, Python quoted path handling, Rust real-time stdbuf unbuffering, and rock-solid Target SDK 34 compatibility mode.",
     "publishedAt": "2026-10-14"
 }

@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.0_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.1_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.1.apk)
 [![Android App Repo](https://img.shields.io/badge/Android_App-code--eidter--app-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/raj40870-pixel/code-eidter-app)
 [![Compiler CDN](https://img.shields.io/badge/Compiler_Library-Official_CDN-purple?style=for-the-badge&logo=gnubash&logoColor=white)](https://github.com/raj40870-pixel/library)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Latest Direct APK Download (v1.4.0)**: [Download CodeEditor-v1.4.0.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk) *(Target SDK 34 Compatibility Mode, versionCode 27, signed package `com.rajkumar.codereditor`)*
+- ⬇️ **Latest Direct APK Download (v1.4.1)**: [Download CodeEditor-v1.4.1.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.1.apk) *(Target SDK 34 Compatibility Mode, versionCode 28, signed package `com.rajkumar.codereditor`)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,7 +28,7 @@ The portal serves APK downloads, visual walkthroughs, and compiler setup guides.
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.0 APK (`CodeEditor-v1.4.0.apk`, Target SDK 34 Compatibility Mode, versionCode 27, package `com.rajkumar.codereditor`).
+- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.1 APK (`CodeEditor-v1.4.1.apk`, Target SDK 34 Compatibility Mode, versionCode 28, package `com.rajkumar.codereditor`).
 - **⚡ Seamless Linux Compilers & PRoot**: Configured `targetSdk = 34` with `compileSdk = 36` to activate Android OS Linker Compatibility Mode, fully resolving Bionic linker errors for PRoot, C++, and Python offline compilers.
 - **🔄 Direct In-App Automatic Updates**: One-tap in-app download and update installer directly fetching from this portal.
 - **📦 Edge-to-Edge System WindowInsets Fix**: Seamless status bar and navigation bar insets preventing overlaps on modern Android devices.
@@ -48,11 +48,11 @@ This file records the current direct-download APK details:
 
 ```json
 {
-  "versionCode": 27,
-  "versionName": "1.4.0",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.0.apk",
+  "versionCode": 28,
+  "versionName": "1.4.1",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.1.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.4.0 (versionCode 27, target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Full edge-to-edge WindowInsets layout fix, direct in-app auto updates from website, and target SDK 34 compatibility mode for smooth Linux compilers and PRoot.",
+  "releaseNotes": "CodeEditor IDE v1.4.1 (versionCode 28, target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Enhanced multi-language execution pipeline across all 14+ languages, Python quoted path handling, Rust real-time stdbuf unbuffering, and rock-solid Target SDK 34 compatibility mode.",
   "publishedAt": "2026-10-14"
 }
 ```
