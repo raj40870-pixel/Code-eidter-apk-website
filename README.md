@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.2_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.2.apk)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.3_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.3.apk)
 [![Android App Repo](https://img.shields.io/badge/Android_App-code--eidter--app-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/raj40870-pixel/code-eidter-app)
 [![Compiler CDN](https://img.shields.io/badge/Compiler_Library-Official_CDN-purple?style=for-the-badge&logo=gnubash&logoColor=white)](https://github.com/raj40870-pixel/library)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Latest Direct APK Download (v1.4.2)**: [Download CodeEditor-v1.4.2.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.2.apk) *(Target SDK 34 Compatibility Mode, versionCode 29, signed package `com.rajkumar.codereditor`)*
+- ⬇️ **Latest Direct APK Download (v1.4.3)**: [Download CodeEditor-v1.4.3.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.3.apk) *(Target SDK 34 Compatibility Mode, versionCode 30, signed package `com.rajkumar.codereditor`)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,7 +28,8 @@ The portal serves APK downloads, visual walkthroughs, and compiler setup guides.
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.2 APK (`CodeEditor-v1.4.2.apk`, Target SDK 34 Compatibility Mode, versionCode 29, package `com.rajkumar.codereditor`).
+- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.3 APK (`CodeEditor-v1.4.3.apk`, Target SDK 34 Compatibility Mode, versionCode 30, package `com.rajkumar.codereditor`).
+- **⚡ Bulletproof Zero-ELOOP Toolchain Extraction**: Eliminates `Too many symbolic links encountered` and directory collision failures during Clang and Rust package unpacking.
 - **⚡ Physical Shared Library Materialization Engine**: Completely resolves Android dynamic linker crashes (`CANNOT LINK EXECUTABLE "clang++": library "libz.so.1" not found`) with automated physical file materialization and platform fallbacks.
 - **🔄 Direct In-App Automatic Updates**: One-tap in-app download and update installer directly fetching from this portal.
 - **📦 Edge-to-Edge System WindowInsets Fix**: Seamless status bar and navigation bar insets preventing overlaps on modern Android devices.
@@ -48,11 +49,11 @@ This file records the current direct-download APK details:
 
 ```json
 {
-  "versionCode": 29,
-  "versionName": "1.4.2",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.2.apk",
+  "versionCode": 30,
+  "versionName": "1.4.3",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.3.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.4.2 (versionCode 29, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Physical shared library materialization engine resolving linker namespace failures (libz.so.1 / libLLVM / libzstd), multi-path fallback recovery, and zero-symlink cross-language execution across all 14+ stacks.",
+  "releaseNotes": "CodeEditor IDE v1.4.3 (versionCode 30, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Bulletproof zero-ELOOP toolchain extraction engine eliminating 'Too many symbolic links encountered', safe directory collision tolerance, standalone physical .so library materialization, and seamless 14+ language execution on Android 10-15.",
   "publishedAt": "2026-10-14"
 }
 ```
