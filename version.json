@@ -1,8 +1,8 @@
 {
-    "versionCode": 30,
-    "versionName": "1.4.3",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.3.apk",
+    "versionCode": 31,
+    "versionName": "1.4.4",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.4.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.3 (versionCode 30, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Bulletproof zero-ELOOP toolchain extraction engine eliminating 'Too many symbolic links encountered', safe directory collision tolerance, standalone physical .so library materialization, and seamless 14+ language execution on Android 10-15.",
-    "publishedAt": "2026-10-14"
+    "releaseNotes": "CodeEditor IDE v1.4.4 (versionCode 31, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Fixed Kotlin kotlinc line 29 syntax error via bash execution engine, manual website-driven update portal without intrusive popups, and adaptive toolbar auto-sizing across all 14+ languages on Android 10-15.",
+    "publishedAt": "2026-10-16"
 }
