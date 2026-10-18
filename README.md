@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.5_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.5.apk)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.6_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.6.apk)
 [![Android App Repo](https://img.shields.io/badge/Android_App-code--eidter--app-blue?style=for-the-badge&logo=github&logoColor=white)](https://github.com/raj40870-pixel/code-eidter-app)
 [![Compiler CDN](https://img.shields.io/badge/Compiler_Library-Official_CDN-purple?style=for-the-badge&logo=gnubash&logoColor=white)](https://github.com/raj40870-pixel/library)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
@@ -12,7 +12,7 @@
 ## 🌐 Ecosystem Quick Links
 
 - 🔗 **Official Website**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- ⬇️ **Latest Direct APK Download (v1.4.5)**: [Download CodeEditor-v1.4.5.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.5.apk) *(Target SDK 34 Compatibility Mode, versionCode 32, signed package `com.rajkumar.codereditor`)*
+- ⬇️ **Latest Direct APK Download (v1.4.6)**: [Download CodeEditor-v1.4.6.apk](https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.6.apk) *(Target SDK 34 Compatibility Mode, versionCode 33, signed package `app.code.editor`)*
 - 📱 **Official Android App Repository**: [raj40870-pixel/code-eidter-app](https://github.com/raj40870-pixel/code-eidter-app)
 - 🗃️ **Compiler Toolchains CDN**: [raj40870-pixel/library](https://github.com/raj40870-pixel/library)
 
@@ -28,7 +28,8 @@ The portal serves APK downloads, visual walkthroughs, and compiler setup guides.
 
 ## ✨ Portal Features
 
-- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.5 APK (`CodeEditor-v1.4.5.apk`, Target SDK 34 Compatibility Mode, versionCode 32, package `com.rajkumar.codereditor`).
+- **⚡ Direct 1-Click APK Download**: Download the signed v1.4.6 APK (`CodeEditor-v1.4.6.apk`, Target SDK 34 Compatibility Mode, versionCode 33, package `app.code.editor`).
+- **📦 Standardized Package Name (`app.code.editor`)**: Clean, store-compliant package ID tailored for Indus Appstore and Android ecosystems.
 - **⚡ Pure Java Kotlin Compilation Engine**: Direct execution via OpenJDK 21 and `kotlin-compiler.jar` without external bash dependencies.
 - **⚡ Direct Mono C# Compilation Engine**: Bypasses broken Termux shebang wrappers by directly executing `mono "$MONO_PATH/mcs.exe"`.
 - **⚡ Universal Shell (.sh) Execution**: Built-in `/system/bin/sh` fallback for seamless shell script execution across all Android devices.
@@ -53,11 +54,11 @@ This file records the current direct-download APK details:
 
 ```json
 {
-  "versionCode": 32,
-  "versionName": "1.4.5",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.5.apk",
+  "versionCode": 33,
+  "versionName": "1.4.6",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.6.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.4.5 (versionCode 32, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Pure Java Kotlin compiler engine eliminating bash dependency, direct Mono C# mcs engine eliminating Exit Code 126, universal Shell (.sh) execution with /system/bin/sh fallback, and self-healing environment wrappers across all 14+ languages on Android 10-15.",
+  "releaseNotes": "CodeEditor IDE v1.4.6 (versionCode 33, Target SDK 34 Compatibility Mode, package app.code.editor): Standardized modern package name app.code.editor for Indus Appstore and store compliance, pure Java Kotlin compiler engine, direct Mono C# mcs engine, universal Shell execution, and self-healing environment across all 15+ languages on Android 10-15.",
   "publishedAt": "2026-10-18"
 }
 ```

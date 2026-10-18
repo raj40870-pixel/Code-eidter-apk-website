@@ -1,8 +1,8 @@
 {
-    "versionCode": 32,
-    "versionName": "1.4.5",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.5.apk",
+    "versionCode": 33,
+    "versionName": "1.4.6",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.6.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.5 (versionCode 32, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Pure Java Kotlin compiler engine eliminating bash dependency, direct Mono C# mcs engine eliminating Exit Code 126, universal Shell (.sh) execution with /system/bin/sh fallback, and self-healing environment wrappers across all 14+ languages on Android 10-15.",
+    "releaseNotes": "CodeEditor IDE v1.4.6 (versionCode 33, Target SDK 34 Compatibility Mode, package app.code.editor): Standardized modern package name app.code.editor for Indus Appstore and store compliance, pure Java Kotlin compiler engine, direct Mono C# mcs engine, universal Shell execution, and self-healing environment across all 15+ languages on Android 10-15.",
     "publishedAt": "2026-10-18"
 }
