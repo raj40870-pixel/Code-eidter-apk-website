@@ -1,8 +1,8 @@
 {
-    "versionCode": 31,
-    "versionName": "1.4.4",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.4.apk",
+    "versionCode": 32,
+    "versionName": "1.4.5",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.5.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.4 (versionCode 31, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Fixed Kotlin kotlinc line 29 syntax error via bash execution engine, manual website-driven update portal without intrusive popups, and adaptive toolbar auto-sizing across all 14+ languages on Android 10-15.",
-    "publishedAt": "2026-10-16"
+    "releaseNotes": "CodeEditor IDE v1.4.5 (versionCode 32, Target SDK 34 Compatibility Mode, package com.rajkumar.codereditor): Pure Java Kotlin compiler engine eliminating bash dependency, direct Mono C# mcs engine eliminating Exit Code 126, universal Shell (.sh) execution with /system/bin/sh fallback, and self-healing environment wrappers across all 14+ languages on Android 10-15.",
+    "publishedAt": "2026-10-18"
 }
