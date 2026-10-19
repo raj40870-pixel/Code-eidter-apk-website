@@ -96,8 +96,8 @@ When a new version of CodeEditor IDE is built:
 ```text
 code-editor-website/
 ├── apk/
-│   ├── CodeEditor-v1.4.0.apk    # Current signed release (target SDK 37, versionCode 27)
-│   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.4.0.apk
+│   ├── CodeEditor-v1.4.6.apk    # Current signed release (target SDK 34, versionCode 33)
+│   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.4.6.apk
 ├── assets/
 │   └── images/                 # App logos, banners, and screenshots
 │       ├── logo.png
