@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.6_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.7_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
 ---
@@ -10,7 +10,7 @@
 ## 🌐 Official Website Portal
 
 - 🔗 **Official Website & Download Portal**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- 📱 **Current Release**: Version 1.4.6 (Target SDK 34, versionCode 33) — available exclusively via the official website portal.
+- 📱 **Current Release**: Version 1.4.7 (Target SDK 34, versionCode 34) — available exclusively via the official website portal.
 
 ---
 
@@ -24,7 +24,7 @@ The portal serves official APK downloads, visual walkthroughs, and compiler setu
 
 ## ✨ Portal Features
 
-- **⚡ Official Web Download Hub**: Direct download portal for the signed v1.4.6 APK (`CodeEditor-v1.4.6.apk`, Target SDK 34 Compatibility Mode, versionCode 33, package `app.code.editor`).
+- **⚡ Official Web Download Hub**: Direct download portal for the signed v1.4.7 APK (`CodeEditor-v1.4.7.apk`, Target SDK 34 Compatibility Mode, versionCode 34, package `app.code.editor`).
 - **📦 Standardized Package Name (`app.code.editor`)**: Clean, store-compliant package ID tailored for Indus Appstore and Android ecosystems.
 - **⚡ Pure Java Kotlin Compilation Engine**: Direct execution via OpenJDK 21 and `kotlin-compiler.jar` without external bash dependencies.
 - **⚡ Direct Mono C# Compilation Engine**: Bypasses broken Termux shebang wrappers by directly executing `mono "$MONO_PATH/mcs.exe"`.
@@ -50,12 +50,12 @@ This file records the current direct-download APK details:
 
 ```json
 {
-  "versionCode": 33,
-  "versionName": "1.4.6",
-  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.6.apk",
+  "versionCode": 34,
+  "versionName": "1.4.7",
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.7.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-  "releaseNotes": "CodeEditor IDE v1.4.6 (versionCode 33, Target SDK 34 Compatibility Mode, package app.code.editor): Standardized modern package name app.code.editor for Indus Appstore and store compliance, pure Java Kotlin compiler engine, direct Mono C# mcs engine, universal Shell execution, and self-healing environment across all 15+ languages on Android 10-15.",
-  "publishedAt": "2026-10-18"
+  "releaseNotes": "CodeEditor IDE v1.4.7 (versionCode 34, Target SDK 34 Compatibility Mode, package app.code.editor): Indus Appstore and Android store policy compliance build. Removed REQUEST_INSTALL_PACKAGES permission, enhanced sandboxed package management, updated privacy compliance, and self-healing environment across 15+ languages on Android 10-15.",
+  "publishedAt": "2026-10-20"
 }
 ```
 
@@ -92,8 +92,8 @@ When a new version of CodeEditor IDE is built:
 ```text
 code-editor-website/
 ├── apk/
-│   ├── CodeEditor-v1.4.6.apk    # Current signed release (target SDK 34, versionCode 33)
-│   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.4.6.apk
+│   ├── CodeEditor-v1.4.7.apk    # Current signed release (target SDK 34, versionCode 34)
+│   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.4.7.apk
 ├── assets/
 │   └── images/                 # App logos, banners, and screenshots
 │       ├── logo.png
