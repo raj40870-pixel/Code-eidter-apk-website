@@ -1,8 +1,8 @@
 {
-    "versionCode": 34,
-    "versionName": "1.4.7",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.7.apk",
+    "versionCode": 35,
+    "versionName": "1.4.8",
+    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.8.apk",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.7 (versionCode 34, Target SDK 34 Compatibility Mode, package app.code.editor): Indus Appstore and Android store policy compliance build. Removed REQUEST_INSTALL_PACKAGES permission, enhanced sandboxed package management, updated privacy compliance, and self-healing environment across 15+ languages on Android 10-15.",
-    "publishedAt": "2026-10-20"
+    "releaseNotes": "CodeEditor IDE v1.4.8 (versionCode 35, Target SDK 36 Compatibility Mode, package app.code.editor): Android 16 developer preview alignment & store compliance release. Updated targetSdkVersion to 36, enhanced PRoot sandboxed runtime execution layer, and eliminated app store draft/re-upload conflicts across 15+ programming languages on Android 7-16.",
+    "publishedAt": "2026-10-24"
 }

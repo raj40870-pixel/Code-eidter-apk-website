@@ -2,7 +2,7 @@
 ### *The Official Landing Page, Setup Guide, and APK Distribution Platform for CodeEditor IDE on Android*
 
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.7_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.8_Signed-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
 ---
@@ -10,7 +10,7 @@
 ## 🌐 Official Website Portal
 
 - 🔗 **Official Website & Download Portal**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
-- 📱 **Current Release**: Version 1.4.7 (Target SDK 34, versionCode 34) — available exclusively via the official website portal.
+- 📱 **Current Release**: Version 1.4.8 (Target SDK 36, versionCode 35) — available exclusively via the official website portal.
 
 ---
 
@@ -24,7 +24,7 @@ The portal serves official APK downloads, visual walkthroughs, and compiler setu
 
 ## ✨ Portal Features
 
-- **⚡ Official Web Download Hub**: Direct download portal for the signed v1.4.7 APK (`CodeEditor-v1.4.7.apk`, Target SDK 34 Compatibility Mode, versionCode 34, package `app.code.editor`).
+- **⚡ Official Web Download Hub**: Direct download portal for the signed v1.4.8 APK (`CodeEditor-v1.4.8.apk`, Target SDK 36 Compatibility Mode, versionCode 35, package `app.code.editor`).
 - **📦 Standardized Package Name (`app.code.editor`)**: Clean, store-compliant package ID tailored for Indus Appstore and Android ecosystems.
 - **⚡ Pure Java Kotlin Compilation Engine**: Direct execution via OpenJDK 21 and `kotlin-compiler.jar` without external bash dependencies.
 - **⚡ Direct Mono C# Compilation Engine**: Bypasses broken Termux shebang wrappers by directly executing `mono "$MONO_PATH/mcs.exe"`.
