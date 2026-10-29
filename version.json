@@ -1,8 +1,9 @@
 {
     "versionCode": 35,
     "versionName": "1.4.8",
-    "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.4.8.apk",
+    "storeUrl": "https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor",
+    "apkUrl": "https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor",
     "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-    "releaseNotes": "CodeEditor IDE v1.4.8 (versionCode 35, Target SDK 36 Compatibility Mode, package app.code.editor): Android 16 developer preview alignment & store compliance release. Updated targetSdkVersion to 36, enhanced PRoot sandboxed runtime execution layer, and eliminated app store draft/re-upload conflicts across 15+ programming languages on Android 7-16.",
-    "publishedAt": "2026-10-24"
+    "releaseNotes": "CodeEditor IDE v1.4.8 (versionCode 35, Target SDK 36 Compatibility Mode, package app.code.editor): Officially published live on Indus Appstore (PhonePe). 15+ offline programming languages on Android 7-16.",
+    "publishedAt": "2026-10-29"
 }
