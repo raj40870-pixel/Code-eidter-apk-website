@@ -127,6 +127,25 @@
           </div>
         </div>
       </div>
+
+      <!-- JVM & Java Runtime Prerequisite Notice -->
+      <div style="margin-top: 32px; background: linear-gradient(135deg, rgba(99, 102, 241, 0.12), rgba(168, 85, 247, 0.08)); border: 1px solid rgba(168, 85, 247, 0.35); border-radius: 16px; padding: 22px 26px; box-shadow: 0 10px 30px -10px rgba(99, 102, 241, 0.2);">
+        <div style="display: flex; gap: 16px; align-items: flex-start;">
+          <div style="font-size: 2rem; line-height: 1; padding: 4px;">☕</div>
+          <div>
+            <h4 style="font-size: 1.1rem; font-weight: 700; color: #ffffff; margin-bottom: 8px; display: flex; align-items: center; gap: 8px; flex-wrap: wrap;">
+              Important Notice: Java (OpenJDK 21) Prerequisite
+              <span style="font-size: 0.72rem; padding: 3px 8px; border-radius: 999px; background: rgba(234, 179, 8, 0.2); color: #facc15; font-weight: 700; border: 1px solid rgba(234, 179, 8, 0.4);">REQUIRED FOR JVM LANGUAGES</span>
+            </h4>
+            <p style="font-size: 0.93rem; color: var(--text-dim); line-height: 1.65; margin: 0 0 10px 0;">
+              Some modern languages run on top of the Java Virtual Machine (JVM). Specifically, <strong>Kotlin (<code>Main.kt</code>)</strong> uses the Kotlin compiler engine, which requires <strong>Java (OpenJDK 21)</strong> to compile and execute code on Android.
+            </p>
+            <div style="background: rgba(15, 23, 42, 0.6); border-radius: 10px; padding: 12px 16px; border: 1px solid rgba(255, 255, 255, 0.08); font-size: 0.88rem; color: #cbd5e1;">
+              💡 <strong>How to Avoid Errors:</strong> Before running a Kotlin project, ensure Java is installed. You can simply create and run a quick <code>Main.java</code> file, or tap to install OpenJDK 21 from the app prompt. Once Java is installed, all JVM and Kotlin scripts run seamlessly!
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
 
     <!-- Download Portal -->
@@ -822,14 +841,14 @@
           <div class="lang-cmd-box">$ go run main.go</div>
         </div>
 
-        <div class="lang-card">
+        <div class="lang-card" style="border-color: rgba(168, 85, 247, 0.45);">
           <div>
             <div class="lang-card-header">
               <div class="lang-icon-wrap" style="color: #a855f7;">🟣</div>
               <span class="lang-badge">Main.kt</span>
             </div>
-            <div class="lang-name">Kotlin</div>
-            <div class="lang-desc">Modern concise language for JVM. Execute standalone Kotlin scripts and algorithms effortlessly.</div>
+            <div class="lang-name">Kotlin <span style="font-size: 0.72rem; padding: 2px 7px; border-radius: 999px; background: rgba(234, 179, 8, 0.2); color: #facc15; font-weight: 700; margin-left: 6px;">Needs Java</span></div>
+            <div class="lang-desc">Modern concise language for JVM. <strong>Note:</strong> Requires Java (OpenJDK 21) installed first to execute the compiler engine.</div>
           </div>
           <div class="lang-cmd-box">$ kotlinc Main.kt -include-runtime -d app.jar</div>
         </div>
@@ -840,8 +859,8 @@
               <div class="lang-icon-wrap" style="color: #3b82f6;">TS</div>
               <span class="lang-badge">main.ts</span>
             </div>
-            <div class="lang-name">TypeScript</div>
-            <div class="lang-desc">Strongly typed JavaScript at any scale. Compile with tsc or run directly with ts-node.</div>
+            <div class="lang-name">TypeScript <span style="font-size: 0.72rem; padding: 2px 7px; border-radius: 999px; background: rgba(59, 130, 246, 0.2); color: #60a5fa; font-weight: 700; margin-left: 6px;">Node.js</span></div>
+            <div class="lang-desc">Strongly typed JavaScript. Runs via Node.js runtime. Compile with tsc or execute directly with ts-node.</div>
           </div>
           <div class="lang-cmd-box">$ npx ts-node main.ts</div>
         </div>
