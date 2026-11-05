@@ -1,0 +1,9 @@
+# Robots.txt for CodeEditor IDE (TermCode) Web Portal
+User-agent: *
+Allow: /
+Allow: /privacy
+Allow: /version.json
+Allow: /apk/
+
+# Official XML Sitemap Location for Google Search Console & Search Engines
+Sitemap: https://code-eidter-apk-website.vercel.app/sitemap.xml

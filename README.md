@@ -44,6 +44,19 @@ The portal serves official APK downloads, visual walkthroughs, and compiler setu
 
 ---
 
+
+---
+
+## 🗺️ Search Engine Optimization & Google Search Console
+
+- 🌐 **Live XML Sitemap**: [https://code-eidter-apk-website.vercel.app/sitemap.xml](https://code-eidter-apk-website.vercel.app/sitemap.xml)
+- 🤖 **Live Robots.txt**: [https://code-eidter-apk-website.vercel.app/robots.txt](https://code-eidter-apk-website.vercel.app/robots.txt)
+- 🔍 **Google Search Console Verification**: `google61d8850f40d616b0.html` (Domain Ownership Verified)
+- 📄 **Included Indexed Pages**:
+  - `https://code-eidter-apk-website.vercel.app/` (Home / Official App Portal & Setup Guide)
+  - `https://code-eidter-apk-website.vercel.app/privacy` (Privacy Policy & Compliance)
+  - `https://code-eidter-apk-website.vercel.app/version.json` (Live In-App Version & OTA Verification Endpoint)
+
 ## 📄 Published APK Metadata (`version.json`)
 
 This file records the current direct-download APK details:
