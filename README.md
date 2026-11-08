@@ -4,6 +4,7 @@
 [![Live on Vercel](https://img.shields.io/badge/Website-Live_on_Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
 [![Indus Appstore](https://img.shields.io/badge/Indus_Appstore-Live_on_Store-00C853?style=for-the-badge&logo=googleplay&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
 [![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.8_Store_Build-success?style=for-the-badge&logo=android&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
+[![Upcoming Release](https://img.shields.io/badge/Upcoming_Release-v1.4.9_(Coming_Soon)-orange?style=for-the-badge&logo=android&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
 ---
@@ -13,6 +14,7 @@
 - 🔗 **Official Website Portal**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
 - 🏪 **Official Store Listing (Indus Appstore)**: [CodeEditor IDE on Indus Appstore](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
 - 📱 **Current Release**: Version 1.4.8 (Target SDK 36, versionCode 35, package `app.code.editor`) — Live on Indian App Store.
+- 🚀 **Upcoming Release (Coming Soon on Indus Appstore)**: Version 1.4.9 (versionCode 36, Target SDK 36) — *Upcoming*. Features smart Java class build cache sync (`$HOME/.bin_cache`), zero duplicate workspace files, exact filename preservation, and automated 24h binary artifact lifecycle. Currently in queue for publishing on Indian App Store; once live, the store listing will automatically update.
 
 ---
 
