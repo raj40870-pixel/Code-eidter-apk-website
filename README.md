@@ -30,7 +30,7 @@
 
 - 📱 **Current Release**: Version 1.4.8 (Target SDK 36, versionCode 35, package `app.code.editor`) — Live on Indian App Store.
 
-- 🚀 **Upcoming Release (Coming Soon on Indus Appstore)**: Version 1.4.9 (versionCode 36, Target SDK 36) — *Upcoming*. Features smart Java class build cache sync (`$HOME/.bin_cache`), zero duplicate workspace files, exact filename preservation, and automated 24h binary artifact lifecycle. Currently in queue for publishing on Indian App Store; once live, the store listing will automatically update.
+- 🚀 **Upcoming Release (Coming Soon on Indus Appstore)**: Version 1.40 (versionCode 37, Target SDK 36) — *Upcoming*. Features built-in Linux Environment CDN integration (`bootstrap-aarch64.zip` on official library repository CDN), multi-hop CDN redirect handling for compiler toolchains, smart Java class cache sync (`$HOME/.bin_cache`), zero duplicate workspace files, and full Indus Appstore compliance.
 
 
 
@@ -222,7 +222,7 @@ code-editor-website/
 
 ├── apk/
 
-│   ├── CodeEditor-v1.40.apk    # Backup signed release (target SDK 36, versionCode 36)
+│   ├── CodeEditor-v1.40.apk    # Backup signed release (target SDK 36, versionCode 37)
 
 │   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.40.apk
 
