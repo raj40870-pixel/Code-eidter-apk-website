@@ -38,6 +38,29 @@
 
 
 
+---
+
+## 🚀 Version Evolution: What's New in v1.4.9 & v1.40
+
+### ⚡ What's New in Version 1.40 (versionCode 37, Target SDK 36) — Upcoming Release
+- 🌐 **Built-in Linux Environment CDN Integration**:
+  - The complete official Linux bootstrap environment (`bootstrap-aarch64.zip`, 32.8 MB) is permanently hosted directly on the official `library` CDN (`v1.3.1`), completely bypassing external Termux server 504 Gateway Time-out failures.
+  - Multi-hop redirect handling with automatic fallback mirrors for instantaneous, 1-click Linux environment installation.
+- ⚡ **Multi-Hop CDN Redirect Handling for Compiler Toolchains**:
+  - Upgraded `ToolchainInstaller.java` to support multi-hop redirect chains up to 6 hops across GitHub Releases CDN and Azure cloud blob storage.
+  - Generous timeouts (45s connect, 120s read) and real SHA-256 integrity verification ensuring zero incomplete or corrupted package downloads.
+- 🏪 **Indus Appstore Version Code 37 Compliance**:
+  - Incremented `versionCode` to 37 and `versionName` to `1.40` for seamless in-progress app update submission on Indus Appstore (PhonePe) without draft conflicts.
+- 🛠️ **Official Terminal `install.sh` Integration**:
+  - Deployed official `install.sh` on `main` branch of library repository for terminal-based toolchain installations supporting both `app.code.editor` and custom `$PREFIX` paths.
+
+### 🛠️ What's New in Version 1.4.9 (versionCode 36, Target SDK 36)
+- 📂 **Smart Java Class Sync to Build Cache (`$HOME/.bin_cache`)**:
+  - **Zero Duplicate Files in User Workspace**: Completely resolved the duplicate Java file creation bug where running files like `class.java` or `main.java` previously generated extra `.java` source files in the project directory.
+  - **Isolated Build Cache Execution**: All class synchronization and compilation artifacts are strictly routed to the isolated `$HOME/.bin_cache` sandbox, keeping user workspaces pristine.
+  - **Exact Filename Retention**: File creation preserves exact user-typed names without forced casing modifications.
+  - **Automated 24-Hour Cache Lifecycle**: Temporary compilation artifacts in `$HOME/.bin_cache` are managed and automatically purged after 24 hours.
+
 ## 🌟 Overview
 
 
