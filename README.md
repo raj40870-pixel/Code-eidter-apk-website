@@ -8,41 +8,29 @@
 
 [![Indus Appstore](https://img.shields.io/badge/Indus_Appstore-Live_on_Store-00C853?style=for-the-badge&logo=googleplay&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
 
-[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.4.8_Store_Build-success?style=for-the-badge&logo=android&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
+[![Latest Release](https://img.shields.io/badge/Latest_Release-v1.40_Live_Build-success?style=for-the-badge&logo=android&logoColor=white)](https://code-eidter-apk-website.vercel.app/)
 
-[![Upcoming Release](https://img.shields.io/badge/Upcoming_Release-v1.40_(Coming_Soon)-orange?style=for-the-badge&logo=android&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
+[![Indus Appstore](https://img.shields.io/badge/Indus_Appstore-Live_on_Store-00C853?style=for-the-badge&logo=googleplay&logoColor=white)](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
 
 [![License](https://img.shields.io/badge/License-MIT-orange?style=for-the-badge)](LICENSE)
 
-
-
 ---
 
-
-
 ## 🌐 Official Website Portal
-
-
 
 - 🔗 **Official Website Portal**: [https://code-eidter-apk-website.vercel.app/](https://code-eidter-apk-website.vercel.app/)
 
 - 🏪 **Official Store Listing (Indus Appstore)**: [CodeEditor IDE on Indus Appstore](https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor)
 
-- 📱 **Current Release**: Version 1.4.8 (Target SDK 36, versionCode 35, package `app.code.editor`) — Live on Indian App Store.
-
-- 🚀 **Upcoming Release (Coming Soon on Indus Appstore)**: Version 1.40 (versionCode 37, Target SDK 36) — *Upcoming*. Features built-in Linux Environment CDN integration (`bootstrap-aarch64.zip` on official library repository CDN), multi-hop CDN redirect handling for compiler toolchains, smart Java class cache sync (`$HOME/.bin_cache`), zero duplicate workspace files, and full Indus Appstore compliance.
-
-
+- 📱 **Current Release**: Version 1.40 (Target SDK 36, versionCode 37, package `app.code.editor`) — Live on Indian App Store & Web Portal.
 
 ---
 
-
-
 ---
 
-## 🚀 Version Evolution: What's New in v1.4.9 & v1.40
+## 🚀 Version Evolution: What's New in v1.40 & v1.4.9
 
-### ⚡ What's New in Version 1.40 (versionCode 37, Target SDK 36) — Upcoming Release
+### ⚡ What's New in Version 1.40 (versionCode 37, Target SDK 36) — Officially Live!
 - 🌐 **Built-in Linux Environment CDN Integration**:
   - The complete official Linux bootstrap environment (`bootstrap-aarch64.zip`, 32.8 MB) is permanently hosted directly on the official `library` CDN (`v1.3.1`), completely bypassing external Termux server 504 Gateway Time-out failures.
   - Multi-hop redirect handling with automatic fallback mirrors for instantaneous, 1-click Linux environment installation.
@@ -81,7 +69,7 @@ The portal serves official APK downloads, visual walkthroughs, and compiler setu
 
 
 
-- **⚡ Official Web Download Hub**: Direct download portal for the signed v1.4.8 APK (`CodeEditor-v1.4.8.apk`, Target SDK 36 Compatibility Mode, versionCode 35, package `app.code.editor`).
+- **⚡ Official Web Download Hub**: Direct download portal for the signed v1.40 APK (`CodeEditor-v1.40.apk`, Target SDK 36 Compatibility Mode, versionCode 37, package `app.code.editor`).
 
 - **📦 Standardized Package Name (`app.code.editor`)**: Clean, store-compliant package ID tailored for Indus Appstore and Android ecosystems.
 
@@ -156,25 +144,19 @@ This file records the current direct-download APK details:
 
 
 ```json
-
 {
-
-  "versionCode": 35,
-
-  "versionName": "1.4.8",
-
+  "versionCode": 37,
+  "versionName": "1.40",
   "storeUrl": "https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor",
-
-  "apkUrl": "https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor",
-
+  "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.40.apk",
+  "latestApkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-latest.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
-
-  "releaseNotes": "CodeEditor IDE v1.4.8 (versionCode 35, Target SDK 36 Compatibility Mode, package app.code.editor): Officially published live on Indus Appstore (PhonePe). 15+ offline programming languages on Android 7-16.",
-
-  "publishedAt": "2026-10-29"
-
+  "sha256": "c713779391a326d7333a08b52906417e47bee83ebfe6d2627f9637289afdd63a",
+  "fileSize": "3.43 MB",
+  "fileSizeBytes": 3594580,
+  "releaseNotes": "CodeEditor IDE v1.40 (versionCode 37, Target SDK 36 Compatibility Mode, package app.code.editor): Officially published and live! Complete offline IDE for 15+ programming languages, automated CDN bootstrap toolchain installer, enhanced terminal environment, Android 7.0-16 support.",
+  "publishedAt": "2026-11-13"
 }
-
 ```
 
 
