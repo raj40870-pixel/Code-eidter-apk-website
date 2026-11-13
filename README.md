@@ -149,7 +149,7 @@ This file records the current direct-download APK details:
   "versionName": "1.40",
   "storeUrl": "https://www.phonepeappstore.com/apps/education/code-editor/app.code.editor/?page=details&id=app.code.editor",
   "apkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.40.apk",
-  "latestApkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-latest.apk",
+  "latestApkUrl": "https://code-eidter-apk-website.vercel.app/apk/CodeEditor-v1.40.apk",
   "websiteUrl": "https://code-eidter-apk-website.vercel.app/",
   "sha256": "c713779391a326d7333a08b52906417e47bee83ebfe6d2627f9637289afdd63a",
   "fileSize": "3.43 MB",
@@ -227,9 +227,7 @@ code-editor-website/
 
 ├── apk/
 
-│   ├── CodeEditor-v1.40.apk    # Backup signed release (target SDK 36, versionCode 37)
-
-│   └── CodeEditor-latest.apk   # Same APK as CodeEditor-v1.40.apk
+│   └── CodeEditor-v1.40.apk    # Main official release APK (target SDK 36, versionCode 37)
 
 ├── assets/
 
