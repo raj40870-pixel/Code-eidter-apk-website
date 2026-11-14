@@ -1836,21 +1836,19 @@ footer {
     font-size: 0.78rem;
   }
 
-  .step-img-col {
-    width: 100%;
-    max-width: 310px;
-    margin: 0 auto;
+  .dual-frames {
+    grid-template-columns: 1fr;
+    gap: 16px;
   }
 
   .mobile-frame {
-    border-radius: 24px;
+    border-radius: 20px;
     padding: 3px;
     max-height: none;
-    width: 100%;
   }
 
   .mobile-frame img {
-    border-radius: 20px;
+    border-radius: 16px;
     max-height: 480px;
     width: 100%;
     object-fit: contain;
